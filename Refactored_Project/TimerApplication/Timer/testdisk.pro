@@ -16,10 +16,6 @@ SOURCES += \
     mainwindow.cpp \
     settings.cpp \
     sorting.cpp \
-    testalarm.cpp \
-    testdel.cpp \
-    testsorts.cpp \
-    testtimer.cpp \
     timeoutwindow.cpp \
     timer.cpp \
     timerconstructor.cpp \
@@ -32,10 +28,6 @@ HEADERS += \
     mainwindow.h \
     settings.h \
     sorting.h \
-    testalarm.h \
-    testdel.h \
-    testsorts.h \
-    testtimer.h \
     timeoutwindow.h \
     timer.h \
     timerconstructor.h \

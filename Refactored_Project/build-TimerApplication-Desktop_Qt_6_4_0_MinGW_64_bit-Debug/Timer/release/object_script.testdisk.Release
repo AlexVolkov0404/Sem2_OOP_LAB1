@@ -5,10 +5,6 @@ release/main.o
 release/mainwindow.o
 release/settings.o
 release/sorting.o
-release/testalarm.o
-release/testdel.o
-release/testsorts.o
-release/testtimer.o
 release/timeoutwindow.o
 release/timer.o
 release/timerconstructor.o
@@ -17,8 +13,4 @@ release/qrc_resourses.o
 release/moc_editconstructor.o
 release/moc_mainwindow.o
 release/moc_settings.o
-release/moc_testalarm.o
-release/moc_testdel.o
-release/moc_testsorts.o
-release/moc_testtimer.o
 release/moc_timerdelete.o
