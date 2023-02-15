@@ -56,7 +56,8 @@ DISTFILES += \
     Resources/deleteAll.png \
     Resources/edit.png \
     Resources/info.png \
-    Resources/stop.jpg
+    Resources/stop.jpg \
+    testdisk.pri
 
 RESOURCES += \
     resourses.qrc

@@ -35,9 +35,113 @@ RES_FILE      =
 SED           = $(QMAKE) -install sed
 MOVE          = move
 SUBTARGETS    =  \
+		sub-TestAlarm \
+		sub-TestDel \
+		sub-TestSorts \
+		sub-TestTimer \
 		sub-Timer-testdisk-pro
 
 
+sub-TestAlarm-qmake_all:  FORCE
+	@if not exist TestAlarm\ mkdir TestAlarm\ & if not exist TestAlarm\ exit 1
+	cd TestAlarm\ && $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestAlarm\TestAlarm.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
+	cd TestAlarm\ && $(MAKE) -f Makefile qmake_all
+sub-TestAlarm: FORCE
+	@if not exist TestAlarm\ mkdir TestAlarm\ & if not exist TestAlarm\ exit 1
+	cd TestAlarm\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestAlarm\TestAlarm.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile
+sub-TestAlarm-make_first: FORCE
+	@if not exist TestAlarm\ mkdir TestAlarm\ & if not exist TestAlarm\ exit 1
+	cd TestAlarm\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestAlarm\TestAlarm.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile 
+sub-TestAlarm-all: FORCE
+	@if not exist TestAlarm\ mkdir TestAlarm\ & if not exist TestAlarm\ exit 1
+	cd TestAlarm\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestAlarm\TestAlarm.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile all
+sub-TestAlarm-clean: FORCE
+	@if not exist TestAlarm\ mkdir TestAlarm\ & if not exist TestAlarm\ exit 1
+	cd TestAlarm\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestAlarm\TestAlarm.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile clean
+sub-TestAlarm-distclean: FORCE
+	@if not exist TestAlarm\ mkdir TestAlarm\ & if not exist TestAlarm\ exit 1
+	cd TestAlarm\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestAlarm\TestAlarm.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile distclean
+sub-TestAlarm-install_subtargets: FORCE
+	@if not exist TestAlarm\ mkdir TestAlarm\ & if not exist TestAlarm\ exit 1
+	cd TestAlarm\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestAlarm\TestAlarm.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile install
+sub-TestAlarm-uninstall_subtargets: FORCE
+	@if not exist TestAlarm\ mkdir TestAlarm\ & if not exist TestAlarm\ exit 1
+	cd TestAlarm\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestAlarm\TestAlarm.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile uninstall
+sub-TestDel-qmake_all:  FORCE
+	@if not exist TestDel\ mkdir TestDel\ & if not exist TestDel\ exit 1
+	cd TestDel\ && $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestDel\TestDel.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
+	cd TestDel\ && $(MAKE) -f Makefile qmake_all
+sub-TestDel: FORCE
+	@if not exist TestDel\ mkdir TestDel\ & if not exist TestDel\ exit 1
+	cd TestDel\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestDel\TestDel.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile
+sub-TestDel-make_first: FORCE
+	@if not exist TestDel\ mkdir TestDel\ & if not exist TestDel\ exit 1
+	cd TestDel\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestDel\TestDel.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile 
+sub-TestDel-all: FORCE
+	@if not exist TestDel\ mkdir TestDel\ & if not exist TestDel\ exit 1
+	cd TestDel\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestDel\TestDel.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile all
+sub-TestDel-clean: FORCE
+	@if not exist TestDel\ mkdir TestDel\ & if not exist TestDel\ exit 1
+	cd TestDel\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestDel\TestDel.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile clean
+sub-TestDel-distclean: FORCE
+	@if not exist TestDel\ mkdir TestDel\ & if not exist TestDel\ exit 1
+	cd TestDel\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestDel\TestDel.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile distclean
+sub-TestDel-install_subtargets: FORCE
+	@if not exist TestDel\ mkdir TestDel\ & if not exist TestDel\ exit 1
+	cd TestDel\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestDel\TestDel.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile install
+sub-TestDel-uninstall_subtargets: FORCE
+	@if not exist TestDel\ mkdir TestDel\ & if not exist TestDel\ exit 1
+	cd TestDel\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestDel\TestDel.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile uninstall
+sub-TestSorts-qmake_all:  FORCE
+	@if not exist TestSorts\ mkdir TestSorts\ & if not exist TestSorts\ exit 1
+	cd TestSorts\ && $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestSorts\TestSorts.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
+	cd TestSorts\ && $(MAKE) -f Makefile qmake_all
+sub-TestSorts: FORCE
+	@if not exist TestSorts\ mkdir TestSorts\ & if not exist TestSorts\ exit 1
+	cd TestSorts\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestSorts\TestSorts.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile
+sub-TestSorts-make_first: FORCE
+	@if not exist TestSorts\ mkdir TestSorts\ & if not exist TestSorts\ exit 1
+	cd TestSorts\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestSorts\TestSorts.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile 
+sub-TestSorts-all: FORCE
+	@if not exist TestSorts\ mkdir TestSorts\ & if not exist TestSorts\ exit 1
+	cd TestSorts\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestSorts\TestSorts.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile all
+sub-TestSorts-clean: FORCE
+	@if not exist TestSorts\ mkdir TestSorts\ & if not exist TestSorts\ exit 1
+	cd TestSorts\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestSorts\TestSorts.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile clean
+sub-TestSorts-distclean: FORCE
+	@if not exist TestSorts\ mkdir TestSorts\ & if not exist TestSorts\ exit 1
+	cd TestSorts\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestSorts\TestSorts.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile distclean
+sub-TestSorts-install_subtargets: FORCE
+	@if not exist TestSorts\ mkdir TestSorts\ & if not exist TestSorts\ exit 1
+	cd TestSorts\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestSorts\TestSorts.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile install
+sub-TestSorts-uninstall_subtargets: FORCE
+	@if not exist TestSorts\ mkdir TestSorts\ & if not exist TestSorts\ exit 1
+	cd TestSorts\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestSorts\TestSorts.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile uninstall
+sub-TestTimer-qmake_all:  FORCE
+	@if not exist TestTimer\ mkdir TestTimer\ & if not exist TestTimer\ exit 1
+	cd TestTimer\ && $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestTimer\TestTimer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
+	cd TestTimer\ && $(MAKE) -f Makefile qmake_all
+sub-TestTimer: FORCE
+	@if not exist TestTimer\ mkdir TestTimer\ & if not exist TestTimer\ exit 1
+	cd TestTimer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestTimer\TestTimer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile
+sub-TestTimer-make_first: FORCE
+	@if not exist TestTimer\ mkdir TestTimer\ & if not exist TestTimer\ exit 1
+	cd TestTimer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestTimer\TestTimer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile 
+sub-TestTimer-all: FORCE
+	@if not exist TestTimer\ mkdir TestTimer\ & if not exist TestTimer\ exit 1
+	cd TestTimer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestTimer\TestTimer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile all
+sub-TestTimer-clean: FORCE
+	@if not exist TestTimer\ mkdir TestTimer\ & if not exist TestTimer\ exit 1
+	cd TestTimer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestTimer\TestTimer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile clean
+sub-TestTimer-distclean: FORCE
+	@if not exist TestTimer\ mkdir TestTimer\ & if not exist TestTimer\ exit 1
+	cd TestTimer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestTimer\TestTimer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile distclean
+sub-TestTimer-install_subtargets: FORCE
+	@if not exist TestTimer\ mkdir TestTimer\ & if not exist TestTimer\ exit 1
+	cd TestTimer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestTimer\TestTimer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile install
+sub-TestTimer-uninstall_subtargets: FORCE
+	@if not exist TestTimer\ mkdir TestTimer\ & if not exist TestTimer\ exit 1
+	cd TestTimer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestTimer\TestTimer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile uninstall
 sub-Timer-testdisk-pro-qmake_all:  FORCE
 	@if not exist Timer\ mkdir Timer\ & if not exist Timer\ exit 1
 	cd Timer\ && $(QMAKE) -o Makefile.testdisk C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\Timer\testdisk.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -308,6 +412,7 @@ Makefile: ../TimerApplication/TimerApplication.pro C:/Qt/6.4.0/mingw_64/mkspecs/
 		C:/Qt/6.4.0/mingw_64/mkspecs/features/qt_config.prf \
 		C:/Qt/6.4.0/mingw_64/mkspecs/win32-g++/qmake.conf \
 		C:/Qt/6.4.0/mingw_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		C:/Qt/6.4.0/mingw_64/mkspecs/features/exclusive_builds.prf \
 		C:/Qt/6.4.0/mingw_64/mkspecs/features/toolchain.prf \
 		C:/Qt/6.4.0/mingw_64/mkspecs/features/default_pre.prf \
@@ -572,6 +677,7 @@ C:/Qt/6.4.0/mingw_64/mkspecs/features/qt_functions.prf:
 C:/Qt/6.4.0/mingw_64/mkspecs/features/qt_config.prf:
 C:/Qt/6.4.0/mingw_64/mkspecs/win32-g++/qmake.conf:
 C:/Qt/6.4.0/mingw_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 C:/Qt/6.4.0/mingw_64/mkspecs/features/exclusive_builds.prf:
 C:/Qt/6.4.0/mingw_64/mkspecs/features/toolchain.prf:
 C:/Qt/6.4.0/mingw_64/mkspecs/features/default_pre.prf:
@@ -594,36 +700,84 @@ C:/Qt/6.4.0/mingw_64/mkspecs/features/lex.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\TimerApplication\TimerApplication.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 
-qmake_all: sub-Timer-testdisk-pro-qmake_all FORCE
+qmake_all: sub-TestAlarm-qmake_all sub-TestDel-qmake_all sub-TestSorts-qmake_all sub-TestTimer-qmake_all sub-Timer-testdisk-pro-qmake_all FORCE
 
-make_first: sub-Timer-testdisk-pro-make_first  FORCE
-all: sub-Timer-testdisk-pro-all  FORCE
-clean: sub-Timer-testdisk-pro-clean  FORCE
-distclean: sub-Timer-testdisk-pro-distclean  FORCE
+make_first: sub-TestAlarm-make_first sub-TestDel-make_first sub-TestSorts-make_first sub-TestTimer-make_first sub-Timer-testdisk-pro-make_first  FORCE
+all: sub-TestAlarm-all sub-TestDel-all sub-TestSorts-all sub-TestTimer-all sub-Timer-testdisk-pro-all  FORCE
+clean: sub-TestAlarm-clean sub-TestDel-clean sub-TestSorts-clean sub-TestTimer-clean sub-Timer-testdisk-pro-clean  FORCE
+distclean: sub-TestAlarm-distclean sub-TestDel-distclean sub-TestSorts-distclean sub-TestTimer-distclean sub-Timer-testdisk-pro-distclean  FORCE
 	-$(DEL_FILE) Makefile
 	-$(DEL_FILE) .qmake.stash
-install_subtargets: sub-Timer-testdisk-pro-install_subtargets FORCE
-uninstall_subtargets: sub-Timer-testdisk-pro-uninstall_subtargets FORCE
+install_subtargets: sub-TestAlarm-install_subtargets sub-TestDel-install_subtargets sub-TestSorts-install_subtargets sub-TestTimer-install_subtargets sub-Timer-testdisk-pro-install_subtargets FORCE
+uninstall_subtargets: sub-TestAlarm-uninstall_subtargets sub-TestDel-uninstall_subtargets sub-TestSorts-uninstall_subtargets sub-TestTimer-uninstall_subtargets sub-Timer-testdisk-pro-uninstall_subtargets FORCE
 
+sub-TestAlarm-debug:
+	@if not exist TestAlarm\ mkdir TestAlarm\ & if not exist TestAlarm\ exit 1
+	cd TestAlarm\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestAlarm\TestAlarm.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile debug
+sub-TestDel-debug:
+	@if not exist TestDel\ mkdir TestDel\ & if not exist TestDel\ exit 1
+	cd TestDel\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestDel\TestDel.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile debug
+sub-TestSorts-debug:
+	@if not exist TestSorts\ mkdir TestSorts\ & if not exist TestSorts\ exit 1
+	cd TestSorts\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestSorts\TestSorts.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile debug
+sub-TestTimer-debug:
+	@if not exist TestTimer\ mkdir TestTimer\ & if not exist TestTimer\ exit 1
+	cd TestTimer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestTimer\TestTimer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile debug
 sub-Timer-testdisk-pro-debug:
 	@if not exist Timer\ mkdir Timer\ & if not exist Timer\ exit 1
 	cd Timer\ && ( if not exist Makefile.testdisk $(QMAKE) -o Makefile.testdisk C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\Timer\testdisk.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile.testdisk debug
-debug: sub-Timer-testdisk-pro-debug
+debug: sub-TestAlarm-debug sub-TestDel-debug sub-TestSorts-debug sub-TestTimer-debug sub-Timer-testdisk-pro-debug
 
+sub-TestAlarm-release:
+	@if not exist TestAlarm\ mkdir TestAlarm\ & if not exist TestAlarm\ exit 1
+	cd TestAlarm\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestAlarm\TestAlarm.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile release
+sub-TestDel-release:
+	@if not exist TestDel\ mkdir TestDel\ & if not exist TestDel\ exit 1
+	cd TestDel\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestDel\TestDel.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile release
+sub-TestSorts-release:
+	@if not exist TestSorts\ mkdir TestSorts\ & if not exist TestSorts\ exit 1
+	cd TestSorts\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestSorts\TestSorts.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile release
+sub-TestTimer-release:
+	@if not exist TestTimer\ mkdir TestTimer\ & if not exist TestTimer\ exit 1
+	cd TestTimer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestTimer\TestTimer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile release
 sub-Timer-testdisk-pro-release:
 	@if not exist Timer\ mkdir Timer\ & if not exist Timer\ exit 1
 	cd Timer\ && ( if not exist Makefile.testdisk $(QMAKE) -o Makefile.testdisk C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\Timer\testdisk.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile.testdisk release
-release: sub-Timer-testdisk-pro-release
+release: sub-TestAlarm-release sub-TestDel-release sub-TestSorts-release sub-TestTimer-release sub-Timer-testdisk-pro-release
 
+sub-TestAlarm-check:
+	@if not exist TestAlarm\ mkdir TestAlarm\ & if not exist TestAlarm\ exit 1
+	cd TestAlarm\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestAlarm\TestAlarm.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile check
+sub-TestDel-check:
+	@if not exist TestDel\ mkdir TestDel\ & if not exist TestDel\ exit 1
+	cd TestDel\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestDel\TestDel.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile check
+sub-TestSorts-check:
+	@if not exist TestSorts\ mkdir TestSorts\ & if not exist TestSorts\ exit 1
+	cd TestSorts\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestSorts\TestSorts.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile check
+sub-TestTimer-check:
+	@if not exist TestTimer\ mkdir TestTimer\ & if not exist TestTimer\ exit 1
+	cd TestTimer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestTimer\TestTimer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile check
 sub-Timer-testdisk-pro-check:
 	@if not exist Timer\ mkdir Timer\ & if not exist Timer\ exit 1
 	cd Timer\ && ( if not exist Makefile.testdisk $(QMAKE) -o Makefile.testdisk C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\Timer\testdisk.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile.testdisk check
-check: sub-Timer-testdisk-pro-check
+check: sub-TestAlarm-check sub-TestDel-check sub-TestSorts-check sub-TestTimer-check sub-Timer-testdisk-pro-check
 
+sub-TestAlarm-benchmark:
+	@if not exist TestAlarm\ mkdir TestAlarm\ & if not exist TestAlarm\ exit 1
+	cd TestAlarm\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestAlarm\TestAlarm.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile benchmark
+sub-TestDel-benchmark:
+	@if not exist TestDel\ mkdir TestDel\ & if not exist TestDel\ exit 1
+	cd TestDel\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestDel\TestDel.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile benchmark
+sub-TestSorts-benchmark:
+	@if not exist TestSorts\ mkdir TestSorts\ & if not exist TestSorts\ exit 1
+	cd TestSorts\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestSorts\TestSorts.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile benchmark
+sub-TestTimer-benchmark:
+	@if not exist TestTimer\ mkdir TestTimer\ & if not exist TestTimer\ exit 1
+	cd TestTimer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\TestTimer\TestTimer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile benchmark
 sub-Timer-testdisk-pro-benchmark:
 	@if not exist Timer\ mkdir Timer\ & if not exist Timer\ exit 1
 	cd Timer\ && ( if not exist Makefile.testdisk $(QMAKE) -o Makefile.testdisk C:\Users\Sasha\Documents\GitHub\Sem2_OOP_LAB1\Refactored_Project\TimerApplication\Timer\testdisk.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile.testdisk benchmark
-benchmark: sub-Timer-testdisk-pro-benchmark
+benchmark: sub-TestAlarm-benchmark sub-TestDel-benchmark sub-TestSorts-benchmark sub-TestTimer-benchmark sub-Timer-testdisk-pro-benchmark
 install:install_subtargets  FORCE
 
 uninstall: uninstall_subtargets FORCE

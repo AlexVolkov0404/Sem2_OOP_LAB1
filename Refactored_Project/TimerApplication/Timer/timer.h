@@ -1,5 +1,6 @@
 #ifndef TIMER_H
 #define TIMER_H
+
 #include <QTime>
 #include <QLabel>
 #include <QTime>

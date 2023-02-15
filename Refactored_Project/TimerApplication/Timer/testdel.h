@@ -1,7 +1,7 @@
 #ifndef TESTDEL_H
 #define TESTDEL_H
 
-#include <QTest>
+//#include <QTest>
 #include "timerdelete.h"
 #include "qtmetamacros.h"
 class TestDel:public QObject
@@ -10,7 +10,7 @@ class TestDel:public QObject
 public:
     TestDel();
 private slots:
-   void dellAll();
+//   void dellAll();
 
 };
 
