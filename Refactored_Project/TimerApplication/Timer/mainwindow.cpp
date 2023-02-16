@@ -3,13 +3,15 @@
 #include <QScrollBar>
 #include <QPushButton>
 #include <iostream>
-/*! \mainpage Documentation of Timer Application(Fist OOP Lab)
+/*! \mainpage Documentation of Timer Application(First OOP Lab)
 *
 *\section intro_sec Main class of the project
 * -MainWindow
 *\section install_sec Classes to work with timers/alarms
 * -TimerConstructor
+*
 * -EditConstructor
+*
 * -TimerDelete
 *\section   Classes Classes to sort timers/alarms
 *-Sorting
