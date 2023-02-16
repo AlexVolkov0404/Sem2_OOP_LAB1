@@ -7,7 +7,7 @@
 #include "settings.h"
 #include "timerconstructor.h"
 #include "timerdelete.h"
-#include "icon.h"
+
 
 #include <QMainWindow>
 #include <QToolBar>
@@ -44,6 +44,7 @@
 #include <QMediaPlayer>
 #include <QAudioOutput>
 #include <QString>
+/// Class MainWindow contains methods  that creates main window of application and sets it properties.
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -52,41 +53,55 @@ public:
     QTime temp;
     QTimer* alarm;
 private:
+
     QString figure;
     QString textDesk;
-    //Toolbar
+    ///creates toolbar
     QToolBar *toolbar;
     QMenuBar*menubar;
+    ///window icon
     QSystemTrayIcon* m_systemTrayIcon;
+    /// @brief sets toolbar
     void setToolBar();
+    ///elements of window
     QLabel *timelbl;
-    //Main window widgets
+    ///elements of window
     QLabel *mainTimerLbl;
+    ///elements of window that shows timer/alarmdescription
     QTextEdit *mainTimerDescriptionLbl;
+    ///screen list of timers
     QListWidget *listW;
+     ///screen list of alarms
     QListWidget *listB;
+    ///list of timers
     QList<Timer> timers;
+    ///object of EditConstructor
     EditConstructor econstructor;
+    ///object of TimerConstructor
     TimerConstructor constructr;
+     ///object of TimerDelete
     TimerDelete delet;
-    Icon icon;
+     ///list of alarms
     QList<Timer> alarms;
+
     Timer buffer;
-//    Alarm bufferAlarm;
     QString tmp;
-//    QString tmpAlarm;
     QString curTime;
-//    QString curTimeAlarm;
     int positionToEdit;
     int positionToEditAlarm;
+    ///object of Settinds
     Settings settings;   
     timeoutwindow wind;
 
 private slots:
+     /// @brief This method sets the description of timers on Description screen.
     void showDescription();
+    /// @brief This method sets the description of alarms on Description screen.
     void showDescriptionAlarm();
 
 private:
+     /// @brief This method connects timers/alarms to the time and sets Icon
+     /// @param *e timer event.
     void timerEvent(QTimerEvent *e);
 };
 

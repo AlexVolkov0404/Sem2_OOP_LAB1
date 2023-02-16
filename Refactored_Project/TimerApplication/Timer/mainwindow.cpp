@@ -3,7 +3,19 @@
 #include <QScrollBar>
 #include <QPushButton>
 #include <iostream>
-
+/*! \mainpage Documentation of Timer Application(Fist OOP Lab)
+*
+*\section intro_sec Main class of the project
+* -MainWindow
+*\section install_sec Classes to work with timers/alarms
+* -TimerConstructor
+* -EditConstructor
+* -TimerDelete
+*\section   Classes Classes to sort timers/alarms
+*-Sorting
+*\section  Other
+*-Settings
+*/
 MainWindow::MainWindow()
 {
     tmp = "\0";
@@ -81,20 +93,16 @@ void MainWindow::timerEvent(QTimerEvent *e)
             timers[i].setTime(timers[i].getTime().addMSecs(-500));
             listW->item(i)->setText(timers[i].getTime().toString());
         }
-//        if(!stoppedTimersPositions.empty()){
-//            for(int i = 0; i < stoppedTimersPositions.size(); i++){
-//                timers[stoppedTimersPositions[i]].setTime(timers[stoppedTimersPositions[i]].getTime().addMSecs(500));
-//            }
-//        }
+
         mainTimerLbl->setText(timers[Sorting::findMin(timers)].getTime().toString());
 
         for(int i = 0; i < timers.size(); i++){
             if(timers[i].getTime() == temp){
-               // timeoutwindow(timers[i].getDesc(),timers[i].getPaths());
+
                 wind.signalsound(timers[i].getDesc(),timers[i].getPaths());
                if(settings.infoOk()==false) wind.sound();
                 mainTimerDescriptionLbl->setText("\0");
-                //stoppedTimersPositions.append(i);
+
                 timers.removeAt(i);
                 listW->clearSelection();
                 QListWidgetItem *it = listW->takeItem(i);
@@ -144,8 +152,6 @@ void MainWindow::setToolBar()
     QAction *addAlarm = addAction("New Alarm");
       file->addAction(add);
       file->addAction(addAlarm);
-    //QAction *stop = toolbar->addAction(QIcon(stoppix),"Stop timer");
-    // toolbar->addSeparator();
 
 
      QMenu *edt;
@@ -188,25 +194,10 @@ void MainWindow::setToolBar()
     connect(dleteAlarmAll,&QAction::triggered,&delet,[=](){delet.delAllTimers(&alarms,listB,mainTimerLbl,mainTimerDescriptionLbl);});
 }
 
-//void MainWindow::stopTimer()
-//{
-////    for(int i = 0; i < timers.size(); i++){
-////        if(timers[i].getTime().toString() == listW->selectedItems().first()->text()){
-////            if(!stoppedTimersPositions.empty()){
-////                for(int j = 0; j < stoppedTimersPositions.size(); j++){
-////                    if(i != stoppedTimersPositions[j]){
-////                        stoppedTimersPositions.append(i);
-////                    } else {
-////                        stoppedTimersPositions.removeAt(j);
-////                    }
-////                }
-////             } else
-////                 stoppedTimersPositions.append(i);
-////        }
-////    }
 
 
-//}
+
+
 
 void MainWindow::showDescription(){
     if(listW->count()>0 && timers.size()>0){
@@ -218,17 +209,14 @@ void MainWindow::showDescription(){
     else   mainTimerDescriptionLbl->setText("\0");
 }
 void MainWindow::showDescriptionAlarm(){
-    //listW->blockSignals(true);
-   // listB->setEnabled(true);
+
     mainTimerDescriptionLbl->setText("\0");
 
       mainTimerDescriptionLbl->setText(alarms[listB->currentRow()].getDesc());
       listW->clearFocus();
 
        listB->clearSelection();
-      // listB->setEnabled(false);
-      // listB->setEnabled(true);
-       // listW->blockSignals(false);
+
 }
 
 

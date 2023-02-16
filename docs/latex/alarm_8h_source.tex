@@ -1,0 +1,32 @@
+\hypertarget{alarm_8h_source}{}\doxysection{alarm.\+h}
+\label{alarm_8h_source}\index{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/alarm.h@{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/alarm.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ALARM\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ALARM\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QTime>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QTime>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <timer.h>}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_alarm}{Alarm}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_timer}{Timer}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \ \ QTime\ \mbox{\hyperlink{class_alarm_a245b14a9677b190cd31ea823ec05de2f}{timeAlarm}};}
+\DoxyCodeLine{00014\ \ \ \ \ QString\ \mbox{\hyperlink{class_alarm_ac990ce41bfa21ad9a3b491df23b880a5}{descriptionAlarm}};}
+\DoxyCodeLine{00016\ \ \ \ \ QString\ \mbox{\hyperlink{class_alarm_aef174c12096bf783df94071aceaca739}{pathsAlarm}};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ alarmEvent(QTimerEvent\ *e);}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_alarm}{Alarm}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_alarm}{Alarm}}(QTime\ \mbox{\hyperlink{class_alarm_a245b14a9677b190cd31ea823ec05de2f}{timeAlarm}},\ QLabel\ \mbox{\hyperlink{class_alarm_ac990ce41bfa21ad9a3b491df23b880a5}{descriptionAlarm}});}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_alarm}{Alarm}}(QTime\ \mbox{\hyperlink{class_alarm_a245b14a9677b190cd31ea823ec05de2f}{timeAlarm}},\ QString\ \mbox{\hyperlink{class_alarm_ac990ce41bfa21ad9a3b491df23b880a5}{descriptionAlarm}},\ QString\ \mbox{\hyperlink{class_alarm_aef174c12096bf783df94071aceaca739}{pathsAlarm}}\ );}
+\DoxyCodeLine{00024\ \ \ \ \ QTime\ \mbox{\hyperlink{class_alarm_a629e234b444d9fa5138974706efc8d80}{getTimeAlarm}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_alarm_a278e6e3d8837aeab9b48e6955aa28f58}{setTimeAlarm}}(QTime\ newTimeAlarm);}
+\DoxyCodeLine{00030\ \ \ \ \ QString\ \mbox{\hyperlink{class_alarm_a31ec015a6021b72fb9b2525f3262755d}{getDescAlarm}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_alarm_a70c60eaef93ee65a298ffc82681c2273}{setDescAlarm}}(QString\ newDescAalrm);}
+\DoxyCodeLine{00036\ \ \ \ \ QString\ \mbox{\hyperlink{class_alarm_abe315359b82b178d6f27fba35453392d}{getPathsAlarm}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_alarm_a6113925efbe09a765a83dcd20c9ebdde}{setPathsAlarm}}(QString\ newPathsAlarm);}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ALARM\_H}}
+
+\end{DoxyCode}

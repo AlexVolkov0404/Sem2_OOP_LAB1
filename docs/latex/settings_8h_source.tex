@@ -1,0 +1,48 @@
+\hypertarget{settings_8h_source}{}\doxysection{settings.\+h}
+\label{settings_8h_source}\index{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/settings.h@{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/settings.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SETTINGS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SETTINGS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}qboxlayout.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}qcheckbox.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}qlabel.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}qpushbutton.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}qwidget.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QRadioButton>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <timer.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <sorting.h>}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_settings}{Settings}}\ :\textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ QWidget\ *\mbox{\hyperlink{class_settings_a19c92b74c2a5f9d894b3aeba587d3f12}{settingsWindow}};}
+\DoxyCodeLine{00021\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_settings_a3b0cf4830669b5c9d09c1fd3c2d025d2}{doNotLbl}};}
+\DoxyCodeLine{00023\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_settings_ace478caf9432430d3894288383bddad1}{sortByTimeIncreaseLabel}};}
+\DoxyCodeLine{00025\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_settings_a064f981b88eed135427ec8911ddab1a1}{sortByTimeDecreaseLabel}};}
+\DoxyCodeLine{00027\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_settings_ae08ba4ce1f72150c540ae39956b58aab}{sortByNameLabel}};}
+\DoxyCodeLine{00029\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_settings_a531ec2f5d0a32d1df4fe9d92a12ef845}{doNotCheckBox}};}
+\DoxyCodeLine{00031\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{class_settings_a8e438152584f0681f80f2061c0094458}{infoOKBtn}};}
+\DoxyCodeLine{00033\ \ \ \ \ QVBoxLayout\ *\mbox{\hyperlink{class_settings_a3786c8a0107a0338f1c28c51abc5916f}{vbox}};}
+\DoxyCodeLine{00035\ \ \ \ \ QHBoxLayout\ *\mbox{\hyperlink{class_settings_a567833b41933b3dda25e8e0d587fdf71}{hbox}}\ ;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_settings_a900d46de0f59fe522c8712d653117297}{doNotDisturb}};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_settings_a4308a5f50633aeed545801d0a9d9508c}{timerIncrease}};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_settings_a8f23759eb97f1a32be77ea8fd062794c}{timerDecrease}};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_settings_ac458054b25bb287f70b1d26cdabcd5fb}{timerName}};}
+\DoxyCodeLine{00045\ \ \ \ \ QRadioButton\ *\mbox{\hyperlink{class_settings_acc119fd12404089bac50dc760b864604}{sortByTimeIncrease}};}
+\DoxyCodeLine{00047\ \ \ \ \ QRadioButton\ *\mbox{\hyperlink{class_settings_a5da6e3784864d82d904b3645cc0bb226}{sortByTimeDecrease}};}
+\DoxyCodeLine{00049\ \ \ \ \ QRadioButton\ *\mbox{\hyperlink{class_settings_a6a56346fd516458c3d5c42eb07d5e061}{sortByName}};}
+\DoxyCodeLine{00050\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_settings}{Settings}}();}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_settings_abb6f4e0eb8c7357e7c1ce42134ff1cd1}{setsettingswindow}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_settings_a79e12f027f0c78694f26d089f329ebde}{sortInfo}}(QList<Timer>\ \&timers);}
+\DoxyCodeLine{00057\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00060\ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_settings_a2b0d9a4e66b1b7ff9533bdf05cd67c37}{infoOk}}();}
+\DoxyCodeLine{00062\ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_settings_a2c1f97b79f68c6f3b57ec619e7800850}{showSettingsWindow}}();}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SETTINGS\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,88 @@
+\hypertarget{class_timer_delete}{}\doxysection{Timer\+Delete Class Reference}
+\label{class_timer_delete}\index{TimerDelete@{TimerDelete}}
+
+
+Class \mbox{\hyperlink{class_timer_delete}{Timer\+Delete}} contains methods that creates window for editing timers and alarms.  
+
+
+
+
+{\ttfamily \#include $<$timerdelete.\+h$>$}
+
+Inheritance diagram for Timer\+Delete\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_timer_delete}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_timer_delete_a65ba2904f4be4021c105cd284205d4db}{del\+Chosen\+Timer}} (QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ $\ast$\mbox{\hyperlink{class_timer_delete_a93293a8f6734734898c14440a2798236}{timers}}, QList\+Widget $\ast$\mbox{\hyperlink{class_timer_delete_a8c47f8626906075c4eb6bcdfec53be9a}{listW}}, QLabel $\ast$main\+Timer\+Lbl, QText\+Edit $\ast$main\+Timer\+Description\+Lbl)
+\begin{DoxyCompactList}\small\item\em This method delete chosen timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_timer_delete_a7beef1b75e29c1753dbf1a4d251014c1}{del\+All\+Timers}} (QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ $\ast$\mbox{\hyperlink{class_timer_delete_a93293a8f6734734898c14440a2798236}{timers}}, QList\+Widget $\ast$\mbox{\hyperlink{class_timer_delete_a8c47f8626906075c4eb6bcdfec53be9a}{listW}}, QLabel $\ast$main\+Timer\+Lbl, QText\+Edit $\ast$main\+Timer\+Description\+Lbl)
+\begin{DoxyCompactList}\small\item\em This method delete all timers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_timer_delete_a8c47f8626906075c4eb6bcdfec53be9a}\label{class_timer_delete_a8c47f8626906075c4eb6bcdfec53be9a}} 
+QList\+Widget $\ast$ {\bfseries listW}
+\begin{DoxyCompactList}\small\item\em list of timers on screen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_delete_a93293a8f6734734898c14440a2798236}\label{class_timer_delete_a93293a8f6734734898c14440a2798236}} 
+QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ $\ast$ {\bfseries timers}
+\begin{DoxyCompactList}\small\item\em list of timers \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_delete_ae6daf08e7b7894cb08c74866f8719c44}\label{class_timer_delete_ae6daf08e7b7894cb08c74866f8719c44}} 
+QMessage\+Box {\bfseries message}
+\begin{DoxyCompactList}\small\item\em creates message box \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_delete_aa3a5cfa931766560ee64c7a0c563cc7b}\label{class_timer_delete_aa3a5cfa931766560ee64c7a0c563cc7b}} 
+QLabel $\ast$ {\bfseries main\+Timer\+Lbl}
+\item 
+\mbox{\Hypertarget{class_timer_delete_ac6bcf00301084d0c4239af17bf050deb}\label{class_timer_delete_ac6bcf00301084d0c4239af17bf050deb}} 
+QText\+Edit $\ast$ {\bfseries main\+Timer\+Description\+Lbl}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_timer_delete}{Timer\+Delete}} contains methods that creates window for editing timers and alarms. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_timer_delete_a7beef1b75e29c1753dbf1a4d251014c1}\label{class_timer_delete_a7beef1b75e29c1753dbf1a4d251014c1}} 
+\index{TimerDelete@{TimerDelete}!delAllTimers@{delAllTimers}}
+\index{delAllTimers@{delAllTimers}!TimerDelete@{TimerDelete}}
+\doxysubsubsection{\texorpdfstring{delAllTimers}{delAllTimers}}
+{\footnotesize\ttfamily void Timer\+Delete\+::del\+All\+Timers (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ $\ast$}]{timers,  }\item[{QList\+Widget $\ast$}]{listW,  }\item[{QLabel $\ast$}]{main\+Timer\+Lbl,  }\item[{QText\+Edit $\ast$}]{main\+Timer\+Description\+Lbl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+This method delete all timers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timers} & List of timers. \\
+\hline
+{\em listW} & List of timers on screen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_timer_delete_a65ba2904f4be4021c105cd284205d4db}\label{class_timer_delete_a65ba2904f4be4021c105cd284205d4db}} 
+\index{TimerDelete@{TimerDelete}!delChosenTimer@{delChosenTimer}}
+\index{delChosenTimer@{delChosenTimer}!TimerDelete@{TimerDelete}}
+\doxysubsubsection{\texorpdfstring{delChosenTimer}{delChosenTimer}}
+{\footnotesize\ttfamily void Timer\+Delete\+::del\+Chosen\+Timer (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ $\ast$}]{timers,  }\item[{QList\+Widget $\ast$}]{listW,  }\item[{QLabel $\ast$}]{main\+Timer\+Lbl,  }\item[{QText\+Edit $\ast$}]{main\+Timer\+Description\+Lbl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+This method delete chosen timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timers} & List of timers. \\
+\hline
+{\em listW} & List of timers on screen. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/timerdelete.\+h\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/timerdelete.\+cpp\end{DoxyCompactItemize}

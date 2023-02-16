@@ -1,0 +1,95 @@
+\hypertarget{mainwindow_8h_source}{}\doxysection{mainwindow.\+h}
+\label{mainwindow_8h_source}\index{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/mainwindow.h@{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/mainwindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MAINWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MAINWINDOW\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}editconstructor.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}timer.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}alarm.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}timeoutwindow.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}settings.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}timerconstructor.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}timerdelete.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QToolBar>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QHBoxLayout>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QVBoxLayout>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QTime>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QSplitter>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QListWidget>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QApplication>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QFontDatabase>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <QMessageBox>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <QTextEdit>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <QTimeEdit>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <QMediaPlayer>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <QSoundEffect>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <QAudioOutput>}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ <QCheckBox>}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ <QProcess>}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ <QDir>}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#include\ <QPainter>}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#include\ <QPainterPath>}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#include\ <QSystemTrayIcon>}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#include\ <QIcon>}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#include\ <QFont>}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#include\ <QListWidget>}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#include\ <QShortcut>}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#include\ <QSpinBox>}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#include\ <QMenuBar>}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#include\ <QSignalMapper>}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#include\ <QMediaPlayer>}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#include\ <QAudioOutput>}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00048\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00049\ \{}
+\DoxyCodeLine{00050\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00051\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}();}
+\DoxyCodeLine{00053\ \ \ \ \ QTime\ temp;}
+\DoxyCodeLine{00054\ \ \ \ \ QTimer*\ alarm;}
+\DoxyCodeLine{00055\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ QString\ figure;}
+\DoxyCodeLine{00058\ \ \ \ \ QString\ textDesk;}
+\DoxyCodeLine{00060\ \ \ \ \ QToolBar\ *\mbox{\hyperlink{class_main_window_a8d655c3a80e21698adee32b4712349cc}{toolbar}};}
+\DoxyCodeLine{00061\ \ \ \ \ QMenuBar*menubar;}
+\DoxyCodeLine{00063\ \ \ \ \ QSystemTrayIcon*\ \mbox{\hyperlink{class_main_window_a4457a78ff065d308a468b7e9b2d20038}{m\_systemTrayIcon}};}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a24ad7c83a198738d59958773ed2b3e57}{setToolBar}}();}
+\DoxyCodeLine{00067\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_main_window_a16ee739debad27ba8e17bc33a9ddd5eb}{timelbl}};}
+\DoxyCodeLine{00069\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_main_window_add36454c33cbc35a9de3ccaf786371fe}{mainTimerLbl}};}
+\DoxyCodeLine{00071\ \ \ \ \ QTextEdit\ *\mbox{\hyperlink{class_main_window_a6dbe6f9730a5547d7536a747de541d6c}{mainTimerDescriptionLbl}};}
+\DoxyCodeLine{00073\ \ \ \ \ QListWidget\ *\mbox{\hyperlink{class_main_window_aa2dd12d2078f162bb06a05cb51ebcfb3}{listW}};}
+\DoxyCodeLine{00075\ \ \ \ \ QListWidget\ *\mbox{\hyperlink{class_main_window_a138cd8dfdf337307c93a97e654d4077e}{listB}};}
+\DoxyCodeLine{00077\ \ \ \ \ QList<Timer>\ \mbox{\hyperlink{class_main_window_a9d6ea8b73e2836af680396542ee733f9}{timers}};}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{class_edit_constructor}{EditConstructor}}\ \mbox{\hyperlink{class_main_window_a255435aabb1082e414533ac9b7090fd9}{econstructor}};}
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{class_timer_constructor}{TimerConstructor}}\ \mbox{\hyperlink{class_main_window_a0e8308e5f30cf36d03411a7e48f1c52f}{constructr}};}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{class_timer_delete}{TimerDelete}}\ \mbox{\hyperlink{class_main_window_ac3723d647be30584809bc63e32183dd8}{delet}};}
+\DoxyCodeLine{00085\ \ \ \ \ QList<Timer>\ \mbox{\hyperlink{class_main_window_aca76de50af7340224cb793a4a8fe3c4b}{alarms}};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{class_timer}{Timer}}\ buffer;}
+\DoxyCodeLine{00088\ \ \ \ \ QString\ tmp;}
+\DoxyCodeLine{00089\ \ \ \ \ QString\ curTime;}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{int}\ positionToEdit;}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{int}\ positionToEditAlarm;}
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{class_settings}{Settings}}\ \mbox{\hyperlink{class_main_window_a562b679480d01ca3ec6e630e827c865d}{settings}};\ \ \ }
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{classtimeoutwindow}{timeoutwindow}}\ wind;}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_aae877953f3b01c4bf237f39bbc6632c8}{showDescription}}();}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_aa749dc31a00aaafc9a84cc55b08d5ec8}{showDescriptionAlarm}}();}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a9d08a694a5f9c532225754381b8011ea}{timerEvent}}(QTimerEvent\ *e);}
+\DoxyCodeLine{00106\ \};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+
+\end{DoxyCode}

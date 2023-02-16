@@ -1,6 +1,5 @@
 debug/alarm.o
 debug/editconstructor.o
-debug/icon.o
 debug/main.o
 debug/mainwindow.o
 debug/settings.o

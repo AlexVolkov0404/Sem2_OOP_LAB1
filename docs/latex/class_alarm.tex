@@ -1,0 +1,173 @@
+\hypertarget{class_alarm}{}\doxysection{Alarm Class Reference}
+\label{class_alarm}\index{Alarm@{Alarm}}
+
+
+Class \mbox{\hyperlink{class_alarm}{Alarm}} contains methods and constructor that creates new alarm object.  
+
+
+
+
+{\ttfamily \#include $<$alarm.\+h$>$}
+
+Inheritance diagram for Alarm\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_alarm}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_alarm_a773bebfdc70fa8dc0f75fa9490e30ce2}\label{class_alarm_a773bebfdc70fa8dc0f75fa9490e30ce2}} 
+{\bfseries Alarm} (QTime \mbox{\hyperlink{class_alarm_a245b14a9677b190cd31ea823ec05de2f}{time\+Alarm}}, QLabel \mbox{\hyperlink{class_alarm_ac990ce41bfa21ad9a3b491df23b880a5}{description\+Alarm}})
+\item 
+\mbox{\Hypertarget{class_alarm_a92622ae24388af0194c47285c2cecbcd}\label{class_alarm_a92622ae24388af0194c47285c2cecbcd}} 
+{\bfseries Alarm} (QTime \mbox{\hyperlink{class_alarm_a245b14a9677b190cd31ea823ec05de2f}{time\+Alarm}}, QString \mbox{\hyperlink{class_alarm_ac990ce41bfa21ad9a3b491df23b880a5}{description\+Alarm}}, QString \mbox{\hyperlink{class_alarm_aef174c12096bf783df94071aceaca739}{paths\+Alarm}})
+\item 
+QTime \mbox{\hyperlink{class_alarm_a629e234b444d9fa5138974706efc8d80}{get\+Time\+Alarm}} ()
+\begin{DoxyCompactList}\small\item\em This method gets time to the end from alarm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarm_a278e6e3d8837aeab9b48e6955aa28f58}{set\+Time\+Alarm}} (QTime new\+Time\+Alarm)
+\begin{DoxyCompactList}\small\item\em This method sets \mbox{\hyperlink{class_alarm}{Alarm}} time. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_alarm_a31ec015a6021b72fb9b2525f3262755d}{get\+Desc\+Alarm}} ()
+\begin{DoxyCompactList}\small\item\em This method gets the description from the alarm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarm_a70c60eaef93ee65a298ffc82681c2273}{set\+Desc\+Alarm}} (QString new\+Desc\+Aalrm)
+\begin{DoxyCompactList}\small\item\em This method sets the alarm description. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_alarm_abe315359b82b178d6f27fba35453392d}{get\+Paths\+Alarm}} ()
+\begin{DoxyCompactList}\small\item\em This method gets the paths of the program which will be activated after the finish of the \mbox{\hyperlink{class_alarm}{Alarm}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarm_a6113925efbe09a765a83dcd20c9ebdde}{set\+Paths\+Alarm}} (QString new\+Paths\+Alarm)
+\begin{DoxyCompactList}\small\item\em This method sets the paths of the program which will be activated after the finish of the alarm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_timer}{Timer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_timer_a37004e406ac57a7b5e4d858463dcdeae}\label{class_timer_a37004e406ac57a7b5e4d858463dcdeae}} 
+{\bfseries Timer} (QTime \mbox{\hyperlink{class_timer_a39a01d6a1e3d04a6ea988321f9c864c9}{time}}, QLabel \mbox{\hyperlink{class_timer_a24bb894801afb00baeb8000eb2ab2845}{description}})
+\item 
+\mbox{\Hypertarget{class_timer_ab1b4719581c3137f5fe8bb665044640a}\label{class_timer_ab1b4719581c3137f5fe8bb665044640a}} 
+{\bfseries Timer} (QTime \mbox{\hyperlink{class_timer_a39a01d6a1e3d04a6ea988321f9c864c9}{time}}, QString \mbox{\hyperlink{class_timer_a24bb894801afb00baeb8000eb2ab2845}{description}}, QString \mbox{\hyperlink{class_timer_ac8266897bdd866e03589859d8f80fa8d}{paths}})
+\item 
+QTime \mbox{\hyperlink{class_timer_a106e18022fe855de3b776bce95d8609f}{get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em This method gets time to the end from timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_timer_a91530071ca51603584e85d6756964b2d}{set\+Time}} (QTime new\+Time)
+\begin{DoxyCompactList}\small\item\em This method sets timer time. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_timer_ab2db1ee05106644ae04d785320460cd5}{get\+Desc}} ()
+\begin{DoxyCompactList}\small\item\em This method gets the description from timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_timer_a4dae2f9affa7ad61c1a26f15cd4b80ea}{set\+Desc}} (QString new\+Desc)
+\begin{DoxyCompactList}\small\item\em This method sets the timer description. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_timer_a9054c7e76fe70d8521e0c87277f60a01}{get\+Paths}} ()
+\begin{DoxyCompactList}\small\item\em This method gets the paths of the program which will be activated after the finish of timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_timer_ad168eb43c29716fb2d676cc7898d2f42}{set\+Paths}} (QString new\+Paths)
+\begin{DoxyCompactList}\small\item\em This method sets the paths of the program which will be activated after the finish of timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_alarm_ab4a2d8d02f6505863b8c82311ae57784}\label{class_alarm_ab4a2d8d02f6505863b8c82311ae57784}} 
+void {\bfseries alarm\+Event} (QTimer\+Event $\ast$e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_alarm_a245b14a9677b190cd31ea823ec05de2f}\label{class_alarm_a245b14a9677b190cd31ea823ec05de2f}} 
+QTime {\bfseries time\+Alarm}
+\begin{DoxyCompactList}\small\item\em alarm time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_alarm_ac990ce41bfa21ad9a3b491df23b880a5}\label{class_alarm_ac990ce41bfa21ad9a3b491df23b880a5}} 
+QString {\bfseries description\+Alarm}
+\begin{DoxyCompactList}\small\item\em alarm description. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_alarm_aef174c12096bf783df94071aceaca739}\label{class_alarm_aef174c12096bf783df94071aceaca739}} 
+QString {\bfseries paths\+Alarm}
+\begin{DoxyCompactList}\small\item\em the paths of the program which will be activated after the finish of alarm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_alarm}{Alarm}} contains methods and constructor that creates new alarm object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_alarm_a31ec015a6021b72fb9b2525f3262755d}\label{class_alarm_a31ec015a6021b72fb9b2525f3262755d}} 
+\index{Alarm@{Alarm}!getDescAlarm@{getDescAlarm}}
+\index{getDescAlarm@{getDescAlarm}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{getDescAlarm()}{getDescAlarm()}}
+{\footnotesize\ttfamily QString Alarm\+::get\+Desc\+Alarm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method gets the description from the alarm. 
+
+\begin{DoxyReturn}{Returns}
+The alarm description. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_alarm_abe315359b82b178d6f27fba35453392d}\label{class_alarm_abe315359b82b178d6f27fba35453392d}} 
+\index{Alarm@{Alarm}!getPathsAlarm@{getPathsAlarm}}
+\index{getPathsAlarm@{getPathsAlarm}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{getPathsAlarm()}{getPathsAlarm()}}
+{\footnotesize\ttfamily QString Alarm\+::get\+Paths\+Alarm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method gets the paths of the program which will be activated after the finish of the \mbox{\hyperlink{class_alarm}{Alarm}}. 
+
+\begin{DoxyReturn}{Returns}
+The alarm description. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_alarm_a629e234b444d9fa5138974706efc8d80}\label{class_alarm_a629e234b444d9fa5138974706efc8d80}} 
+\index{Alarm@{Alarm}!getTimeAlarm@{getTimeAlarm}}
+\index{getTimeAlarm@{getTimeAlarm}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{getTimeAlarm()}{getTimeAlarm()}}
+{\footnotesize\ttfamily QTime Alarm\+::get\+Time\+Alarm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method gets time to the end from alarm. 
+
+\begin{DoxyReturn}{Returns}
+The time to the end. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_alarm_a70c60eaef93ee65a298ffc82681c2273}\label{class_alarm_a70c60eaef93ee65a298ffc82681c2273}} 
+\index{Alarm@{Alarm}!setDescAlarm@{setDescAlarm}}
+\index{setDescAlarm@{setDescAlarm}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{setDescAlarm()}{setDescAlarm()}}
+{\footnotesize\ttfamily void Alarm\+::set\+Desc\+Alarm (\begin{DoxyParamCaption}\item[{QString}]{new\+Desc\+Aalrm }\end{DoxyParamCaption})}
+
+
+
+This method sets the alarm description. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Desc\+Alarm} & Amount of time which you want to set your alarm. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_alarm_a6113925efbe09a765a83dcd20c9ebdde}\label{class_alarm_a6113925efbe09a765a83dcd20c9ebdde}} 
+\index{Alarm@{Alarm}!setPathsAlarm@{setPathsAlarm}}
+\index{setPathsAlarm@{setPathsAlarm}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{setPathsAlarm()}{setPathsAlarm()}}
+{\footnotesize\ttfamily void Alarm\+::set\+Paths\+Alarm (\begin{DoxyParamCaption}\item[{QString}]{new\+Paths\+Alarm }\end{DoxyParamCaption})}
+
+
+
+This method sets the paths of the program which will be activated after the finish of the alarm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Paths\+Alarm} & Amount of time which you want to set your alarm. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_alarm_a278e6e3d8837aeab9b48e6955aa28f58}\label{class_alarm_a278e6e3d8837aeab9b48e6955aa28f58}} 
+\index{Alarm@{Alarm}!setTimeAlarm@{setTimeAlarm}}
+\index{setTimeAlarm@{setTimeAlarm}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{setTimeAlarm()}{setTimeAlarm()}}
+{\footnotesize\ttfamily void Alarm\+::set\+Time\+Alarm (\begin{DoxyParamCaption}\item[{QTime}]{new\+Time\+Alarm }\end{DoxyParamCaption})}
+
+
+
+This method sets \mbox{\hyperlink{class_alarm}{Alarm}} time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Time\+Alarm} & Amount of time which you want to set your alarm. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/alarm.\+h\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/alarm.\+cpp\end{DoxyCompactItemize}

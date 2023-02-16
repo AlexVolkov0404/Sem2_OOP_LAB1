@@ -1,0 +1,50 @@
+\hypertarget{timerconstructor_8h_source}{}\doxysection{timerconstructor.\+h}
+\label{timerconstructor_8h_source}\index{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/timerconstructor.h@{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/timerconstructor.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TIMERCONSTRUCTOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TIMERCONSTRUCTOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}qlistwidget.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}timer.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}qdatetimeedit.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}qlabel.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}qpushbutton.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}qspinbox.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}qtextedit.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}qwidget.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QVBoxLayout>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QTime>}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_timer_constructor}{TimerConstructor}}:\textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \textcolor{comment}{//\ Q\_OBJECT}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ QWidget\ *\mbox{\hyperlink{class_timer_constructor_ac8b9a41dc934b74a387aa86c7d0ea8b5}{addWindow}};}
+\DoxyCodeLine{00023\ \ \ \ \ QSpinBox*\mbox{\hyperlink{class_timer_constructor_afc001a23e6e1a99aeb7e69285eace83d}{amountTimer}};}
+\DoxyCodeLine{00025\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_timer_constructor_a96160c90ae218d015fb9f49898816922}{addTimerLbl}};}
+\DoxyCodeLine{00027\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_timer_constructor_ac891f4be9bfa14e0e51658cd47b90b30}{addDescLbl}};}
+\DoxyCodeLine{00029\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_timer_constructor_ad9257be0cc9b250d8ae5d1f563bd2951}{addCountLbl}};}
+\DoxyCodeLine{00031\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_timer_constructor_a8e97e2c7117d54c0a3f574f9b8ffe102}{addPathsLbl}};}
+\DoxyCodeLine{00033\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_timer_constructor_a487533637b1f86956e99b0652f035c14}{addPathsLblAlarm}};}
+\DoxyCodeLine{00035\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_timer_constructor_a49c06146082c5d049456d3a1193ff486}{addTimeEdit}};}
+\DoxyCodeLine{00037\ \ \ \ \ QTextEdit\ *\mbox{\hyperlink{class_timer_constructor_a051c156cd626d2c59751307ae0f7ed20}{addTextEdit}};}
+\DoxyCodeLine{00039\ \ \ \ \ QTextEdit\ *\mbox{\hyperlink{class_timer_constructor_adb17d12038f2e9217517f73f2f88d807}{addCountTextEdit}};}
+\DoxyCodeLine{00041\ \ \ \ \ QTextEdit\ *\mbox{\hyperlink{class_timer_constructor_a4f18eff5ed23027a7601f1368851c234}{addPathsTextEdit}};}
+\DoxyCodeLine{00043\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{class_timer_constructor_aac19ffd8f821266e55c4bdd5f88081c6}{addBtn}}\ ;}
+\DoxyCodeLine{00045\ \ \ \ \ QListWidget\ *\mbox{\hyperlink{class_timer_constructor_a638f4941177179b4895f84e07a8bd489}{listW}};}
+\DoxyCodeLine{00047\ \ \ \ \ QList<Timer>\ *\mbox{\hyperlink{class_timer_constructor_a6ed99ecac00ec606e875cca34bebe197}{timers}};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_timer_constructor}{TimerConstructor}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_timer_constructor_a26adb05d8b4f87fd0472f36839a5e072}{showConstructorWindow}}(QList<Timer>\ *\mbox{\hyperlink{class_timer_constructor_a6ed99ecac00ec606e875cca34bebe197}{timers}},\ QListWidget\ *\mbox{\hyperlink{class_timer_constructor_a638f4941177179b4895f84e07a8bd489}{listW}});}
+\DoxyCodeLine{00059\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_timer_constructor_a5327ef9eb48ee2e471f8a7d25b3a8209}{addNewTimer}}(QList<Timer>\ *\mbox{\hyperlink{class_timer_constructor_a6ed99ecac00ec606e875cca34bebe197}{timers}},\ QListWidget\ *\mbox{\hyperlink{class_timer_constructor_a638f4941177179b4895f84e07a8bd489}{listW}},\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{int}\ min,\ \textcolor{keywordtype}{int}\ sec,\ QString\ Desc,\ QString\ paths);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TIMERCONSTRUCTOR\_H}}
+
+\end{DoxyCode}

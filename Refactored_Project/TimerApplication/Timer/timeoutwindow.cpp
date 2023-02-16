@@ -27,13 +27,7 @@ void timeoutwindow :: signalsound(QString description, QString paths)
 
     signalWindow->show();
     signalWindow->setLayout(vbox);
-     qDebug()<<"timers.size()1111111111111111";
-//    auto audioOutput = new QAudioOutput();
-//    player = new QMediaPlayer();
-//    player->setSource( QUrl("qrc:/Resources/AlarmClock.wav"));
-//    player->setAudioOutput(audioOutput);
-//    audioOutput->setVolume(50);
-//    player->play();
+
     QAbstractButton::connect(timeoutOKBtn, &QPushButton::clicked, signalWindow, &QPushButton::close);
 }
 void timeoutwindow::sound(){

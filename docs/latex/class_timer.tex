@@ -1,0 +1,152 @@
+\hypertarget{class_timer}{}\doxysection{Timer Class Reference}
+\label{class_timer}\index{Timer@{Timer}}
+
+
+Class \mbox{\hyperlink{class_timer}{Timer}} contains methods and constructor that creates new timer object.  
+
+
+
+
+{\ttfamily \#include $<$timer.\+h$>$}
+
+Inheritance diagram for Timer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_timer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_timer_a37004e406ac57a7b5e4d858463dcdeae}\label{class_timer_a37004e406ac57a7b5e4d858463dcdeae}} 
+{\bfseries Timer} (QTime \mbox{\hyperlink{class_timer_a39a01d6a1e3d04a6ea988321f9c864c9}{time}}, QLabel \mbox{\hyperlink{class_timer_a24bb894801afb00baeb8000eb2ab2845}{description}})
+\item 
+\mbox{\Hypertarget{class_timer_ab1b4719581c3137f5fe8bb665044640a}\label{class_timer_ab1b4719581c3137f5fe8bb665044640a}} 
+{\bfseries Timer} (QTime \mbox{\hyperlink{class_timer_a39a01d6a1e3d04a6ea988321f9c864c9}{time}}, QString \mbox{\hyperlink{class_timer_a24bb894801afb00baeb8000eb2ab2845}{description}}, QString \mbox{\hyperlink{class_timer_ac8266897bdd866e03589859d8f80fa8d}{paths}})
+\item 
+QTime \mbox{\hyperlink{class_timer_a106e18022fe855de3b776bce95d8609f}{get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em This method gets time to the end from timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_timer_a91530071ca51603584e85d6756964b2d}{set\+Time}} (QTime new\+Time)
+\begin{DoxyCompactList}\small\item\em This method sets timer time. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_timer_ab2db1ee05106644ae04d785320460cd5}{get\+Desc}} ()
+\begin{DoxyCompactList}\small\item\em This method gets the description from timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_timer_a4dae2f9affa7ad61c1a26f15cd4b80ea}{set\+Desc}} (QString new\+Desc)
+\begin{DoxyCompactList}\small\item\em This method sets the timer description. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_timer_a9054c7e76fe70d8521e0c87277f60a01}{get\+Paths}} ()
+\begin{DoxyCompactList}\small\item\em This method gets the paths of the program which will be activated after the finish of timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_timer_ad168eb43c29716fb2d676cc7898d2f42}{set\+Paths}} (QString new\+Paths)
+\begin{DoxyCompactList}\small\item\em This method sets the paths of the program which will be activated after the finish of timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_timer_a24625bdecfef6f13c869745361a8d7e9}\label{class_timer_a24625bdecfef6f13c869745361a8d7e9}} 
+void {\bfseries timer\+Event} (QTimer\+Event $\ast$e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_timer_a39a01d6a1e3d04a6ea988321f9c864c9}\label{class_timer_a39a01d6a1e3d04a6ea988321f9c864c9}} 
+QTime {\bfseries time}
+\begin{DoxyCompactList}\small\item\em time to the end of the timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_a24bb894801afb00baeb8000eb2ab2845}\label{class_timer_a24bb894801afb00baeb8000eb2ab2845}} 
+QString {\bfseries description}
+\begin{DoxyCompactList}\small\item\em timer description. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_ac8266897bdd866e03589859d8f80fa8d}\label{class_timer_ac8266897bdd866e03589859d8f80fa8d}} 
+QString {\bfseries paths}
+\begin{DoxyCompactList}\small\item\em the paths of the program which will be activated after the finish of timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_timer}{Timer}} contains methods and constructor that creates new timer object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_timer_ab2db1ee05106644ae04d785320460cd5}\label{class_timer_ab2db1ee05106644ae04d785320460cd5}} 
+\index{Timer@{Timer}!getDesc@{getDesc}}
+\index{getDesc@{getDesc}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{getDesc()}{getDesc()}}
+{\footnotesize\ttfamily QString Timer\+::get\+Desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method gets the description from timer. 
+
+\begin{DoxyReturn}{Returns}
+The timer description. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_timer_a9054c7e76fe70d8521e0c87277f60a01}\label{class_timer_a9054c7e76fe70d8521e0c87277f60a01}} 
+\index{Timer@{Timer}!getPaths@{getPaths}}
+\index{getPaths@{getPaths}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{getPaths()}{getPaths()}}
+{\footnotesize\ttfamily QString Timer\+::get\+Paths (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method gets the paths of the program which will be activated after the finish of timer. 
+
+\begin{DoxyReturn}{Returns}
+The timer description. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_timer_a106e18022fe855de3b776bce95d8609f}\label{class_timer_a106e18022fe855de3b776bce95d8609f}} 
+\index{Timer@{Timer}!getTime@{getTime}}
+\index{getTime@{getTime}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily QTime Timer\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method gets time to the end from timer. 
+
+\begin{DoxyReturn}{Returns}
+The time to the end. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_timer_a4dae2f9affa7ad61c1a26f15cd4b80ea}\label{class_timer_a4dae2f9affa7ad61c1a26f15cd4b80ea}} 
+\index{Timer@{Timer}!setDesc@{setDesc}}
+\index{setDesc@{setDesc}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{setDesc()}{setDesc()}}
+{\footnotesize\ttfamily void Timer\+::set\+Desc (\begin{DoxyParamCaption}\item[{QString}]{new\+Desc }\end{DoxyParamCaption})}
+
+
+
+This method sets the timer description. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Desc} & Amount of time which you want to set your timer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_timer_ad168eb43c29716fb2d676cc7898d2f42}\label{class_timer_ad168eb43c29716fb2d676cc7898d2f42}} 
+\index{Timer@{Timer}!setPaths@{setPaths}}
+\index{setPaths@{setPaths}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{setPaths()}{setPaths()}}
+{\footnotesize\ttfamily void Timer\+::set\+Paths (\begin{DoxyParamCaption}\item[{QString}]{new\+Paths }\end{DoxyParamCaption})}
+
+
+
+This method sets the paths of the program which will be activated after the finish of timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Paths} & Amount of time which you want to set your timer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_timer_a91530071ca51603584e85d6756964b2d}\label{class_timer_a91530071ca51603584e85d6756964b2d}} 
+\index{Timer@{Timer}!setTime@{setTime}}
+\index{setTime@{setTime}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily void Timer\+::set\+Time (\begin{DoxyParamCaption}\item[{QTime}]{new\+Time }\end{DoxyParamCaption})}
+
+
+
+This method sets timer time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Time} & Amount of time which you want to set your timer. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/timer.\+h\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/timer.\+cpp\end{DoxyCompactItemize}

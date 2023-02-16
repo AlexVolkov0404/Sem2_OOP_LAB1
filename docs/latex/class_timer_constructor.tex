@@ -1,0 +1,99 @@
+\hypertarget{class_timer_constructor}{}\doxysection{Timer\+Constructor Class Reference}
+\label{class_timer_constructor}\index{TimerConstructor@{TimerConstructor}}
+
+
+Class \mbox{\hyperlink{class_timer_constructor}{Timer\+Constructor}} contains methods that creates new timer and set its properties.  
+
+
+
+
+{\ttfamily \#include $<$timerconstructor.\+h$>$}
+
+Inheritance diagram for Timer\+Constructor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_timer_constructor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_timer_constructor_a26adb05d8b4f87fd0472f36839a5e072}{show\+Constructor\+Window}} (QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ $\ast$\mbox{\hyperlink{class_timer_constructor_a6ed99ecac00ec606e875cca34bebe197}{timers}}, QList\+Widget $\ast$\mbox{\hyperlink{class_timer_constructor_a638f4941177179b4895f84e07a8bd489}{listW}})
+\begin{DoxyCompactList}\small\item\em This method sets the window of adding and shows it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_a5327ef9eb48ee2e471f8a7d25b3a8209}\label{class_timer_constructor_a5327ef9eb48ee2e471f8a7d25b3a8209}} 
+void {\bfseries add\+New\+Timer} (QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ $\ast$\mbox{\hyperlink{class_timer_constructor_a6ed99ecac00ec606e875cca34bebe197}{timers}}, QList\+Widget $\ast$\mbox{\hyperlink{class_timer_constructor_a638f4941177179b4895f84e07a8bd489}{listW}}, int h, int min, int sec, QString Desc, QString paths)
+\begin{DoxyCompactList}\small\item\em This method adds and sets new timers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_timer_constructor_ac8b9a41dc934b74a387aa86c7d0ea8b5}\label{class_timer_constructor_ac8b9a41dc934b74a387aa86c7d0ea8b5}} 
+QWidget $\ast$ {\bfseries add\+Window}
+\begin{DoxyCompactList}\small\item\em window for adding timers \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_afc001a23e6e1a99aeb7e69285eace83d}\label{class_timer_constructor_afc001a23e6e1a99aeb7e69285eace83d}} 
+QSpin\+Box $\ast$ {\bfseries amount\+Timer}
+\begin{DoxyCompactList}\small\item\em element of window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_a96160c90ae218d015fb9f49898816922}\label{class_timer_constructor_a96160c90ae218d015fb9f49898816922}} 
+QLabel $\ast$ {\bfseries add\+Timer\+Lbl}
+\begin{DoxyCompactList}\small\item\em element of window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_ac891f4be9bfa14e0e51658cd47b90b30}\label{class_timer_constructor_ac891f4be9bfa14e0e51658cd47b90b30}} 
+QLabel $\ast$ {\bfseries add\+Desc\+Lbl}
+\begin{DoxyCompactList}\small\item\em element of window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_ad9257be0cc9b250d8ae5d1f563bd2951}\label{class_timer_constructor_ad9257be0cc9b250d8ae5d1f563bd2951}} 
+QLabel $\ast$ {\bfseries add\+Count\+Lbl}
+\begin{DoxyCompactList}\small\item\em element of window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_a8e97e2c7117d54c0a3f574f9b8ffe102}\label{class_timer_constructor_a8e97e2c7117d54c0a3f574f9b8ffe102}} 
+QLabel $\ast$ {\bfseries add\+Paths\+Lbl}
+\begin{DoxyCompactList}\small\item\em element of window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_a487533637b1f86956e99b0652f035c14}\label{class_timer_constructor_a487533637b1f86956e99b0652f035c14}} 
+QLabel $\ast$ {\bfseries add\+Paths\+Lbl\+Alarm}
+\begin{DoxyCompactList}\small\item\em element of window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_a49c06146082c5d049456d3a1193ff486}\label{class_timer_constructor_a49c06146082c5d049456d3a1193ff486}} 
+QTime\+Edit $\ast$ {\bfseries add\+Time\+Edit}
+\begin{DoxyCompactList}\small\item\em element of window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_a051c156cd626d2c59751307ae0f7ed20}\label{class_timer_constructor_a051c156cd626d2c59751307ae0f7ed20}} 
+QText\+Edit $\ast$ {\bfseries add\+Text\+Edit}
+\begin{DoxyCompactList}\small\item\em element of window to set timer time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_adb17d12038f2e9217517f73f2f88d807}\label{class_timer_constructor_adb17d12038f2e9217517f73f2f88d807}} 
+QText\+Edit $\ast$ {\bfseries add\+Count\+Text\+Edit}
+\begin{DoxyCompactList}\small\item\em element of window to set timer description. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_a4f18eff5ed23027a7601f1368851c234}\label{class_timer_constructor_a4f18eff5ed23027a7601f1368851c234}} 
+QText\+Edit $\ast$ {\bfseries add\+Paths\+Text\+Edit}
+\begin{DoxyCompactList}\small\item\em element of window to set paths of the program which will be activated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_aac19ffd8f821266e55c4bdd5f88081c6}\label{class_timer_constructor_aac19ffd8f821266e55c4bdd5f88081c6}} 
+QPush\+Button $\ast$ {\bfseries add\+Btn}
+\begin{DoxyCompactList}\small\item\em button tha closed Time\+Constructor window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_a638f4941177179b4895f84e07a8bd489}\label{class_timer_constructor_a638f4941177179b4895f84e07a8bd489}} 
+QList\+Widget $\ast$ {\bfseries listW}
+\begin{DoxyCompactList}\small\item\em list of timers on screen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_timer_constructor_a6ed99ecac00ec606e875cca34bebe197}\label{class_timer_constructor_a6ed99ecac00ec606e875cca34bebe197}} 
+QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ $\ast$ {\bfseries timers}
+\begin{DoxyCompactList}\small\item\em list of timers \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_timer_constructor}{Timer\+Constructor}} contains methods that creates new timer and set its properties. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_timer_constructor_a26adb05d8b4f87fd0472f36839a5e072}\label{class_timer_constructor_a26adb05d8b4f87fd0472f36839a5e072}} 
+\index{TimerConstructor@{TimerConstructor}!showConstructorWindow@{showConstructorWindow}}
+\index{showConstructorWindow@{showConstructorWindow}!TimerConstructor@{TimerConstructor}}
+\doxysubsubsection{\texorpdfstring{showConstructorWindow}{showConstructorWindow}}
+{\footnotesize\ttfamily void Timer\+Constructor\+::show\+Constructor\+Window (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ $\ast$}]{timers,  }\item[{QList\+Widget $\ast$}]{listW }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+This method sets the window of adding and shows it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timers} & List of timers. \\
+\hline
+{\em listW} & List of timers on screen. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/timerconstructor.\+h\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/timerconstructor.\+cpp\end{DoxyCompactItemize}

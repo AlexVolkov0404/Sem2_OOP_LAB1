@@ -1,0 +1,124 @@
+\hypertarget{class_settings}{}\doxysection{Settings Class Reference}
+\label{class_settings}\index{Settings@{Settings}}
+
+
+Class \mbox{\hyperlink{class_settings}{Settings}} contains methods that creates window for settings.  
+
+
+
+
+{\ttfamily \#include $<$settings.\+h$>$}
+
+Inheritance diagram for Settings\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_settings}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_settings_a2b0d9a4e66b1b7ff9533bdf05cd67c37}{info\+Ok}} ()
+\begin{DoxyCompactList}\small\item\em This method saves the information. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_a2c1f97b79f68c6f3b57ec619e7800850}\label{class_settings_a2c1f97b79f68c6f3b57ec619e7800850}} 
+void {\bfseries show\+Settings\+Window} ()
+\begin{DoxyCompactList}\small\item\em This method shows window for editing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_settings_abb6f4e0eb8c7357e7c1ce42134ff1cd1}\label{class_settings_abb6f4e0eb8c7357e7c1ce42134ff1cd1}} 
+void {\bfseries setsettingswindow} ()
+\begin{DoxyCompactList}\small\item\em This method sets the window for editing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_settings_a79e12f027f0c78694f26d089f329ebde}{sort\+Info}} (QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ \&timers)
+\begin{DoxyCompactList}\small\item\em This method checks the type of sort. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_settings_a19c92b74c2a5f9d894b3aeba587d3f12}\label{class_settings_a19c92b74c2a5f9d894b3aeba587d3f12}} 
+QWidget $\ast$ {\bfseries settings\+Window}
+\begin{DoxyCompactList}\small\item\em creates window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_a3b0cf4830669b5c9d09c1fd3c2d025d2}\label{class_settings_a3b0cf4830669b5c9d09c1fd3c2d025d2}} 
+QLabel $\ast$ {\bfseries do\+Not\+Lbl}
+\begin{DoxyCompactList}\small\item\em element of window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_ace478caf9432430d3894288383bddad1}\label{class_settings_ace478caf9432430d3894288383bddad1}} 
+QLabel $\ast$ {\bfseries sort\+By\+Time\+Increase\+Label}
+\begin{DoxyCompactList}\small\item\em element of window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_a064f981b88eed135427ec8911ddab1a1}\label{class_settings_a064f981b88eed135427ec8911ddab1a1}} 
+QLabel $\ast$ {\bfseries sort\+By\+Time\+Decrease\+Label}
+\begin{DoxyCompactList}\small\item\em element of window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_ae08ba4ce1f72150c540ae39956b58aab}\label{class_settings_ae08ba4ce1f72150c540ae39956b58aab}} 
+QLabel $\ast$ {\bfseries sort\+By\+Name\+Label}
+\begin{DoxyCompactList}\small\item\em element of window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_a531ec2f5d0a32d1df4fe9d92a12ef845}\label{class_settings_a531ec2f5d0a32d1df4fe9d92a12ef845}} 
+QCheck\+Box $\ast$ {\bfseries do\+Not\+Check\+Box}
+\begin{DoxyCompactList}\small\item\em element of window that checks sound mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_a8e438152584f0681f80f2061c0094458}\label{class_settings_a8e438152584f0681f80f2061c0094458}} 
+QPush\+Button $\ast$ {\bfseries info\+OKBtn}
+\begin{DoxyCompactList}\small\item\em button that saves and closes the setting window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_a3786c8a0107a0338f1c28c51abc5916f}\label{class_settings_a3786c8a0107a0338f1c28c51abc5916f}} 
+QVBox\+Layout $\ast$ {\bfseries vbox}
+\begin{DoxyCompactList}\small\item\em element of window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_a567833b41933b3dda25e8e0d587fdf71}\label{class_settings_a567833b41933b3dda25e8e0d587fdf71}} 
+QHBox\+Layout $\ast$ {\bfseries hbox}
+\begin{DoxyCompactList}\small\item\em element of window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_a900d46de0f59fe522c8712d653117297}\label{class_settings_a900d46de0f59fe522c8712d653117297}} 
+bool {\bfseries do\+Not\+Disturb}
+\begin{DoxyCompactList}\small\item\em var for checking type of sound mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_a4308a5f50633aeed545801d0a9d9508c}\label{class_settings_a4308a5f50633aeed545801d0a9d9508c}} 
+bool {\bfseries timer\+Increase}
+\begin{DoxyCompactList}\small\item\em var for checking timer\+Increase type of sorting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_a8f23759eb97f1a32be77ea8fd062794c}\label{class_settings_a8f23759eb97f1a32be77ea8fd062794c}} 
+bool {\bfseries timer\+Decrease}
+\begin{DoxyCompactList}\small\item\em var for checking timer\+Decrease type of sorting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_ac458054b25bb287f70b1d26cdabcd5fb}\label{class_settings_ac458054b25bb287f70b1d26cdabcd5fb}} 
+bool {\bfseries timer\+Name}
+\begin{DoxyCompactList}\small\item\em var for checking timer\+Name type of sorting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_acc119fd12404089bac50dc760b864604}\label{class_settings_acc119fd12404089bac50dc760b864604}} 
+QRadio\+Button $\ast$ {\bfseries sort\+By\+Time\+Increase}
+\begin{DoxyCompactList}\small\item\em selector for type of sorting mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_a5da6e3784864d82d904b3645cc0bb226}\label{class_settings_a5da6e3784864d82d904b3645cc0bb226}} 
+QRadio\+Button $\ast$ {\bfseries sort\+By\+Time\+Decrease}
+\begin{DoxyCompactList}\small\item\em selector for type of sorting mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_settings_a6a56346fd516458c3d5c42eb07d5e061}\label{class_settings_a6a56346fd516458c3d5c42eb07d5e061}} 
+QRadio\+Button $\ast$ {\bfseries sort\+By\+Name}
+\begin{DoxyCompactList}\small\item\em selector for type of sorting mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_settings}{Settings}} contains methods that creates window for settings. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_settings_a2b0d9a4e66b1b7ff9533bdf05cd67c37}\label{class_settings_a2b0d9a4e66b1b7ff9533bdf05cd67c37}} 
+\index{Settings@{Settings}!infoOk@{infoOk}}
+\index{infoOk@{infoOk}!Settings@{Settings}}
+\doxysubsubsection{\texorpdfstring{infoOk}{infoOk}}
+{\footnotesize\ttfamily bool Settings\+::info\+Ok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+This method saves the information. 
+
+\begin{DoxyReturn}{Returns}
+do\+Not\+Disturb Checker of sound mode. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_settings_a79e12f027f0c78694f26d089f329ebde}\label{class_settings_a79e12f027f0c78694f26d089f329ebde}} 
+\index{Settings@{Settings}!sortInfo@{sortInfo}}
+\index{sortInfo@{sortInfo}!Settings@{Settings}}
+\doxysubsubsection{\texorpdfstring{sortInfo()}{sortInfo()}}
+{\footnotesize\ttfamily void Settings\+::sort\+Info (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ \&}]{timers }\end{DoxyParamCaption})}
+
+
+
+This method checks the type of sort. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timers} & List of timers. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/settings.\+h\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/settings.\+cpp\end{DoxyCompactItemize}

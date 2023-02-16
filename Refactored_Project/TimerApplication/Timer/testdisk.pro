@@ -11,7 +11,6 @@ CONFIG += c++17
 SOURCES += \
     alarm.cpp \
     editconstructor.cpp \
-    icon.cpp \
     main.cpp \
     mainwindow.cpp \
     settings.cpp \
@@ -24,7 +23,6 @@ SOURCES += \
 HEADERS += \
     alarm.h \
     editconstructor.h \
-    icon.h \
     mainwindow.h \
     settings.h \
     sorting.h \

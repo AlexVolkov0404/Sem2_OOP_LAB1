@@ -1,6 +1,5 @@
 release/alarm.o
 release/editconstructor.o
-release/icon.o
 release/main.o
 release/mainwindow.o
 release/settings.o

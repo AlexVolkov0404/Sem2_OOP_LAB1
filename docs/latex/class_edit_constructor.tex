@@ -1,0 +1,102 @@
+\hypertarget{class_edit_constructor}{}\doxysection{Edit\+Constructor Class Reference}
+\label{class_edit_constructor}\index{EditConstructor@{EditConstructor}}
+
+
+Class \mbox{\hyperlink{class_edit_constructor}{Edit\+Constructor}} contains methods that creates window for editing timers and alarms.  
+
+
+
+
+{\ttfamily \#include $<$editconstructor.\+h$>$}
+
+Inheritance diagram for Edit\+Constructor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_edit_constructor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_edit_constructor_a0f13f003df559b1b18cbc2ed5970b5f7}{show\+Edit\+Window}} (QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ $\ast$\mbox{\hyperlink{class_edit_constructor_a08ace1c1983194a627ccac3e52614a4d}{timers}}, QList\+Widget $\ast$\mbox{\hyperlink{class_edit_constructor_aff1c7d0bf1b62b207d007482bc049382}{listW}})
+\begin{DoxyCompactList}\small\item\em This method sets the window for editing and shows it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edit_constructor_a7419980729124495c13825d9e1caaf83}\label{class_edit_constructor_a7419980729124495c13825d9e1caaf83}} 
+void {\bfseries edit\+Timer\+Information} (QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ \&\mbox{\hyperlink{class_edit_constructor_a08ace1c1983194a627ccac3e52614a4d}{timers}})
+\begin{DoxyCompactList}\small\item\em This method sets the new parameters of the chosen timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edit_constructor_a481aa6acec675c4e190b4e09f1eaed18}\label{class_edit_constructor_a481aa6acec675c4e190b4e09f1eaed18}} 
+void {\bfseries checker} (QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ \&\mbox{\hyperlink{class_edit_constructor_a08ace1c1983194a627ccac3e52614a4d}{timers}}, QList\+Widget $\ast$\mbox{\hyperlink{class_edit_constructor_aff1c7d0bf1b62b207d007482bc049382}{listW}})
+\begin{DoxyCompactList}\small\item\em This method checks the position of the chosen timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edit_constructor_a4dfcb4eb718c0e30f2b3a48d9a13bd83}\label{class_edit_constructor_a4dfcb4eb718c0e30f2b3a48d9a13bd83}} 
+void {\bfseries set\+Time\+Edit} (QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ \&\mbox{\hyperlink{class_edit_constructor_a08ace1c1983194a627ccac3e52614a4d}{timers}})
+\begin{DoxyCompactList}\small\item\em This method sets timer on screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_edit_constructor_aff1c7d0bf1b62b207d007482bc049382}\label{class_edit_constructor_aff1c7d0bf1b62b207d007482bc049382}} 
+QList\+Widget $\ast$ {\bfseries listW}
+\begin{DoxyCompactList}\small\item\em list of timers on screen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edit_constructor_a08ace1c1983194a627ccac3e52614a4d}\label{class_edit_constructor_a08ace1c1983194a627ccac3e52614a4d}} 
+QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ $\ast$ {\bfseries timers}
+\begin{DoxyCompactList}\small\item\em list of timers \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edit_constructor_af1d6ec0491a1eb0b950743346b61518c}\label{class_edit_constructor_af1d6ec0491a1eb0b950743346b61518c}} 
+QWidget $\ast$ {\bfseries edit\+Window}
+\begin{DoxyCompactList}\small\item\em window for editing \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edit_constructor_a35b460363eef928ed6c7d3296c1d6c51}\label{class_edit_constructor_a35b460363eef928ed6c7d3296c1d6c51}} 
+QLabel $\ast$ {\bfseries edit\+Time\+Lbl}
+\begin{DoxyCompactList}\small\item\em element of window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edit_constructor_a22b7332d4a8d7af7b618e867d9ed5080}\label{class_edit_constructor_a22b7332d4a8d7af7b618e867d9ed5080}} 
+QLabel $\ast$ {\bfseries edit\+Desc\+Lbl}
+\begin{DoxyCompactList}\small\item\em element of window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edit_constructor_ae6f61c0025cce215a41302c73d76496d}\label{class_edit_constructor_ae6f61c0025cce215a41302c73d76496d}} 
+QTime\+Edit $\ast$ {\bfseries edit\+Time\+Edit}
+\begin{DoxyCompactList}\small\item\em element of window that edits time of the timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edit_constructor_a88201bbc2f99065368bad92eccaef549}\label{class_edit_constructor_a88201bbc2f99065368bad92eccaef549}} 
+QText\+Edit $\ast$ {\bfseries edit\+Desc\+Edit}
+\begin{DoxyCompactList}\small\item\em element of window that edits description of the timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edit_constructor_ab6440c2da9e08007a16b5b3c7c18802e}\label{class_edit_constructor_ab6440c2da9e08007a16b5b3c7c18802e}} 
+QPush\+Button $\ast$ {\bfseries edit\+Timer\+Btn}
+\begin{DoxyCompactList}\small\item\em button that save information and close the editing window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edit_constructor_a670b71a0be1ac802009d77d27175a2e5}\label{class_edit_constructor_a670b71a0be1ac802009d77d27175a2e5}} 
+QString {\bfseries tmp}
+\item 
+\mbox{\Hypertarget{class_edit_constructor_a97c378902aca19071dbe8f6b88fd49be}\label{class_edit_constructor_a97c378902aca19071dbe8f6b88fd49be}} 
+int {\bfseries position\+To\+Edit}
+\begin{DoxyCompactList}\small\item\em the number of chosen timer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edit_constructor_a83ebd9fcebfbb26f0f4f94ccc1440d81}\label{class_edit_constructor_a83ebd9fcebfbb26f0f4f94ccc1440d81}} 
+\mbox{\hyperlink{class_timer_constructor}{Timer\+Constructor}} {\bfseries constructor}
+\item 
+\mbox{\Hypertarget{class_edit_constructor_a736ce5311a1d5586f78b2eab8071c603}\label{class_edit_constructor_a736ce5311a1d5586f78b2eab8071c603}} 
+\mbox{\hyperlink{class_timer}{Timer}} {\bfseries buffer}
+\item 
+\mbox{\Hypertarget{class_edit_constructor_a0e35c621ca77c4a65e67904bb2fc78c4}\label{class_edit_constructor_a0e35c621ca77c4a65e67904bb2fc78c4}} 
+QMessage\+Box {\bfseries message}
+\begin{DoxyCompactList}\small\item\em creates message box \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_edit_constructor}{Edit\+Constructor}} contains methods that creates window for editing timers and alarms. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_edit_constructor_a0f13f003df559b1b18cbc2ed5970b5f7}\label{class_edit_constructor_a0f13f003df559b1b18cbc2ed5970b5f7}} 
+\index{EditConstructor@{EditConstructor}!showEditWindow@{showEditWindow}}
+\index{showEditWindow@{showEditWindow}!EditConstructor@{EditConstructor}}
+\doxysubsubsection{\texorpdfstring{showEditWindow}{showEditWindow}}
+{\footnotesize\ttfamily void Edit\+Constructor\+::show\+Edit\+Window (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ $\ast$}]{timers,  }\item[{QList\+Widget $\ast$}]{listW }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+This method sets the window for editing and shows it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timers} & List of timers. \\
+\hline
+{\em listW} & List of timers on screen. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/editconstructor.\+h\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/editconstructor.\+cpp\end{DoxyCompactItemize}

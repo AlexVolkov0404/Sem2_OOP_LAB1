@@ -1,0 +1,40 @@
+\hypertarget{timeoutwindow_8h_source}{}\doxysection{timeoutwindow.\+h}
+\label{timeoutwindow_8h_source}\index{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/timeoutwindow.h@{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/timeoutwindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TIMEOUTWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TIMEOUTWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QProcess>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QHBoxLayout>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QVBoxLayout>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}qlabel.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}qpushbutton.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}qtextedit.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}qwidget.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QMediaPlayer>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QAudioOutput>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtimeoutwindow}{timeoutwindow}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ QWidget\ *\mbox{\hyperlink{classtimeoutwindow_abf9374ab7ba38878c3175495b845a7f8}{signalWindow}};}
+\DoxyCodeLine{00021\ \ \ \ \ QLabel\ *\mbox{\hyperlink{classtimeoutwindow_ae0b37399322b42f17dfbfe18cc1eaff3}{timeoutLbl}};}
+\DoxyCodeLine{00023\ \ \ \ \ QTextEdit\ *\mbox{\hyperlink{classtimeoutwindow_acae317e11ca70839c88b28feaf06cb41}{timeoutDescLbl}};}
+\DoxyCodeLine{00025\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{classtimeoutwindow_ae467d93b9f099d4a3189c2a298fe20b3}{timeoutOKBtn}};}
+\DoxyCodeLine{00027\ \ \ \ \ QVBoxLayout\ *\mbox{\hyperlink{classtimeoutwindow_aa95e89c86bce6545d675882a6d719f51}{vbox}};}
+\DoxyCodeLine{00029\ \ \ \ \ QMediaPlayer\ *\mbox{\hyperlink{classtimeoutwindow_aeb4e5fe00c5cb30712084ef3582a22fe}{player}};}
+\DoxyCodeLine{00031\ \ \ \ \ QString\ \mbox{\hyperlink{classtimeoutwindow_ac33204f700b322d4dbbd01e4e50bc6a7}{description}};}
+\DoxyCodeLine{00033\ \ \ \ \ QString\ \mbox{\hyperlink{classtimeoutwindow_a2f48a8796244bb0a7909fac995375a71}{paths}};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \mbox{\hyperlink{classtimeoutwindow}{timeoutwindow}}();}
+\DoxyCodeLine{00041\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classtimeoutwindow_a9125090b4649c982b3bee7dcb6ae5797}{signalsound}}(QString\ \mbox{\hyperlink{classtimeoutwindow_ac33204f700b322d4dbbd01e4e50bc6a7}{description}},\ QString\ \mbox{\hyperlink{classtimeoutwindow_a2f48a8796244bb0a7909fac995375a71}{paths}});}
+\DoxyCodeLine{00043\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classtimeoutwindow_af4238a969b7385325f58b38e34248975}{sound}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TIMEOUTWINDOW\_H}}
+
+\end{DoxyCode}

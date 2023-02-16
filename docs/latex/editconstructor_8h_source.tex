@@ -1,0 +1,45 @@
+\hypertarget{editconstructor_8h_source}{}\doxysection{editconstructor.\+h}
+\label{editconstructor_8h_source}\index{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/editconstructor.h@{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/editconstructor.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ EDITCONSTRUCTOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EDITCONSTRUCTOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QVBoxLayout>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QMessageBox>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}qdatetimeedit.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}qlistwidget.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}qpushbutton.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}qtextedit.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}timer.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}timerconstructor.h"{}}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_edit_constructor}{EditConstructor}}:\textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ QListWidget\ *\mbox{\hyperlink{class_edit_constructor_aff1c7d0bf1b62b207d007482bc049382}{listW}};}
+\DoxyCodeLine{00021\ \ \ \ \ QList<Timer>\ *\mbox{\hyperlink{class_edit_constructor_a08ace1c1983194a627ccac3e52614a4d}{timers}};}
+\DoxyCodeLine{00023\ \ \ \ \ QWidget\ *\mbox{\hyperlink{class_edit_constructor_af1d6ec0491a1eb0b950743346b61518c}{editWindow}};}
+\DoxyCodeLine{00025\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_edit_constructor_a35b460363eef928ed6c7d3296c1d6c51}{editTimeLbl}};}
+\DoxyCodeLine{00027\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_edit_constructor_a22b7332d4a8d7af7b618e867d9ed5080}{editDescLbl}};}
+\DoxyCodeLine{00029\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_edit_constructor_ae6f61c0025cce215a41302c73d76496d}{editTimeEdit}};}
+\DoxyCodeLine{00031\ \ \ \ \ QTextEdit\ *\mbox{\hyperlink{class_edit_constructor_a88201bbc2f99065368bad92eccaef549}{editDescEdit}};}
+\DoxyCodeLine{00033\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{class_edit_constructor_ab6440c2da9e08007a16b5b3c7c18802e}{editTimerBtn}};}
+\DoxyCodeLine{00034\ \ \ \ \ QString\ tmp;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_edit_constructor_a97c378902aca19071dbe8f6b88fd49be}{positionToEdit}};}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_timer_constructor}{TimerConstructor}}\ constructor;}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_timer}{Timer}}\ buffer;}
+\DoxyCodeLine{00040\ \ \ \ \ QMessageBox\ \mbox{\hyperlink{class_edit_constructor_a0e35c621ca77c4a65e67904bb2fc78c4}{message}};}
+\DoxyCodeLine{00041\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_edit_constructor}{EditConstructor}}();}
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_constructor_a0f13f003df559b1b18cbc2ed5970b5f7}{showEditWindow}}(QList<Timer>\ *\mbox{\hyperlink{class_edit_constructor_a08ace1c1983194a627ccac3e52614a4d}{timers}},\ QListWidget\ *\mbox{\hyperlink{class_edit_constructor_aff1c7d0bf1b62b207d007482bc049382}{listW}});}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_constructor_a7419980729124495c13825d9e1caaf83}{editTimerInformation}}(QList<Timer>\ \&\mbox{\hyperlink{class_edit_constructor_a08ace1c1983194a627ccac3e52614a4d}{timers}});}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_constructor_a481aa6acec675c4e190b4e09f1eaed18}{checker}}(QList<Timer>\ \&\mbox{\hyperlink{class_edit_constructor_a08ace1c1983194a627ccac3e52614a4d}{timers}},\ QListWidget\ *\mbox{\hyperlink{class_edit_constructor_aff1c7d0bf1b62b207d007482bc049382}{listW}});}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_constructor_a4dfcb4eb718c0e30f2b3a48d9a13bd83}{setTimeEdit}}(QList<Timer>\ \&\mbox{\hyperlink{class_edit_constructor_a08ace1c1983194a627ccac3e52614a4d}{timers}});}
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EDITCONSTRUCTOR\_H}}
+
+\end{DoxyCode}

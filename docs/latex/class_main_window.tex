@@ -1,0 +1,139 @@
+\hypertarget{class_main_window}{}\doxysection{Main\+Window Class Reference}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+Class \mbox{\hyperlink{class_main_window}{Main\+Window}} contains methods that creates main window of application and sets it properties.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_ac04fa8071ddf0c142c4fdade76e66eb2}\label{class_main_window_ac04fa8071ddf0c142c4fdade76e66eb2}} 
+QTime {\bfseries temp}
+\item 
+\mbox{\Hypertarget{class_main_window_a055af52aba3de7e84fe5779885c7aba3}\label{class_main_window_a055af52aba3de7e84fe5779885c7aba3}} 
+QTimer $\ast$ {\bfseries alarm}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_aae877953f3b01c4bf237f39bbc6632c8}\label{class_main_window_aae877953f3b01c4bf237f39bbc6632c8}} 
+void {\bfseries show\+Description} ()
+\begin{DoxyCompactList}\small\item\em This method sets the description of timers on Description screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_aa749dc31a00aaafc9a84cc55b08d5ec8}\label{class_main_window_aa749dc31a00aaafc9a84cc55b08d5ec8}} 
+void {\bfseries show\+Description\+Alarm} ()
+\begin{DoxyCompactList}\small\item\em This method sets the description of alarms on Description screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a24ad7c83a198738d59958773ed2b3e57}\label{class_main_window_a24ad7c83a198738d59958773ed2b3e57}} 
+void {\bfseries set\+Tool\+Bar} ()
+\begin{DoxyCompactList}\small\item\em sets toolbar \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a9d08a694a5f9c532225754381b8011ea}{timer\+Event}} (QTimer\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em This method connects timers/alarms to the time and sets Icon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a00a2cad240cdea5675e247a5264713cb}\label{class_main_window_a00a2cad240cdea5675e247a5264713cb}} 
+QString {\bfseries figure}
+\item 
+\mbox{\Hypertarget{class_main_window_a4a83e8ed6abe3b68d1bfaa5e9f49b9fc}\label{class_main_window_a4a83e8ed6abe3b68d1bfaa5e9f49b9fc}} 
+QString {\bfseries text\+Desk}
+\item 
+\mbox{\Hypertarget{class_main_window_a8d655c3a80e21698adee32b4712349cc}\label{class_main_window_a8d655c3a80e21698adee32b4712349cc}} 
+QTool\+Bar $\ast$ {\bfseries toolbar}
+\begin{DoxyCompactList}\small\item\em creates toolbar \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a0560cfa4fc38b003ec2a353b2c474bd9}\label{class_main_window_a0560cfa4fc38b003ec2a353b2c474bd9}} 
+QMenu\+Bar $\ast$ {\bfseries menubar}
+\item 
+\mbox{\Hypertarget{class_main_window_a4457a78ff065d308a468b7e9b2d20038}\label{class_main_window_a4457a78ff065d308a468b7e9b2d20038}} 
+QSystem\+Tray\+Icon $\ast$ {\bfseries m\+\_\+system\+Tray\+Icon}
+\begin{DoxyCompactList}\small\item\em window icon \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a16ee739debad27ba8e17bc33a9ddd5eb}\label{class_main_window_a16ee739debad27ba8e17bc33a9ddd5eb}} 
+QLabel $\ast$ {\bfseries timelbl}
+\begin{DoxyCompactList}\small\item\em elements of window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_add36454c33cbc35a9de3ccaf786371fe}\label{class_main_window_add36454c33cbc35a9de3ccaf786371fe}} 
+QLabel $\ast$ {\bfseries main\+Timer\+Lbl}
+\begin{DoxyCompactList}\small\item\em elements of window \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a6dbe6f9730a5547d7536a747de541d6c}\label{class_main_window_a6dbe6f9730a5547d7536a747de541d6c}} 
+QText\+Edit $\ast$ {\bfseries main\+Timer\+Description\+Lbl}
+\begin{DoxyCompactList}\small\item\em elements of window that shows timer/alarmdescription \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_aa2dd12d2078f162bb06a05cb51ebcfb3}\label{class_main_window_aa2dd12d2078f162bb06a05cb51ebcfb3}} 
+QList\+Widget $\ast$ {\bfseries listW}
+\begin{DoxyCompactList}\small\item\em screen list of timers \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a138cd8dfdf337307c93a97e654d4077e}\label{class_main_window_a138cd8dfdf337307c93a97e654d4077e}} 
+QList\+Widget $\ast$ {\bfseries listB}
+\begin{DoxyCompactList}\small\item\em screen list of alarms \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a9d6ea8b73e2836af680396542ee733f9}\label{class_main_window_a9d6ea8b73e2836af680396542ee733f9}} 
+QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ {\bfseries timers}
+\begin{DoxyCompactList}\small\item\em list of timers \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a255435aabb1082e414533ac9b7090fd9}\label{class_main_window_a255435aabb1082e414533ac9b7090fd9}} 
+\mbox{\hyperlink{class_edit_constructor}{Edit\+Constructor}} {\bfseries econstructor}
+\begin{DoxyCompactList}\small\item\em object of \mbox{\hyperlink{class_edit_constructor}{Edit\+Constructor}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a0e8308e5f30cf36d03411a7e48f1c52f}\label{class_main_window_a0e8308e5f30cf36d03411a7e48f1c52f}} 
+\mbox{\hyperlink{class_timer_constructor}{Timer\+Constructor}} {\bfseries constructr}
+\begin{DoxyCompactList}\small\item\em object of \mbox{\hyperlink{class_timer_constructor}{Timer\+Constructor}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_ac3723d647be30584809bc63e32183dd8}\label{class_main_window_ac3723d647be30584809bc63e32183dd8}} 
+\mbox{\hyperlink{class_timer_delete}{Timer\+Delete}} {\bfseries delet}
+\begin{DoxyCompactList}\small\item\em object of \mbox{\hyperlink{class_timer_delete}{Timer\+Delete}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_aca76de50af7340224cb793a4a8fe3c4b}\label{class_main_window_aca76de50af7340224cb793a4a8fe3c4b}} 
+QList$<$ \mbox{\hyperlink{class_timer}{Timer}} $>$ {\bfseries alarms}
+\begin{DoxyCompactList}\small\item\em list of alarms \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a442811606747a6a3cc0007cc6a7cdb50}\label{class_main_window_a442811606747a6a3cc0007cc6a7cdb50}} 
+\mbox{\hyperlink{class_timer}{Timer}} {\bfseries buffer}
+\item 
+\mbox{\Hypertarget{class_main_window_a77bc67ce582206713f1b24ac105ed313}\label{class_main_window_a77bc67ce582206713f1b24ac105ed313}} 
+QString {\bfseries tmp}
+\item 
+\mbox{\Hypertarget{class_main_window_a92a1b9f2fe86cb338c10042f3aac0189}\label{class_main_window_a92a1b9f2fe86cb338c10042f3aac0189}} 
+QString {\bfseries cur\+Time}
+\item 
+\mbox{\Hypertarget{class_main_window_aeb6024785961cdefb181fb45bc02c291}\label{class_main_window_aeb6024785961cdefb181fb45bc02c291}} 
+int {\bfseries position\+To\+Edit}
+\item 
+\mbox{\Hypertarget{class_main_window_a447b5c895a0584465c9f8609393ad317}\label{class_main_window_a447b5c895a0584465c9f8609393ad317}} 
+int {\bfseries position\+To\+Edit\+Alarm}
+\item 
+\mbox{\Hypertarget{class_main_window_a562b679480d01ca3ec6e630e827c865d}\label{class_main_window_a562b679480d01ca3ec6e630e827c865d}} 
+\mbox{\hyperlink{class_settings}{Settings}} {\bfseries settings}
+\begin{DoxyCompactList}\small\item\em object of Settinds \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a5dad39827b2498b288a6703f11c8529e}\label{class_main_window_a5dad39827b2498b288a6703f11c8529e}} 
+\mbox{\hyperlink{classtimeoutwindow}{timeoutwindow}} {\bfseries wind}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_main_window}{Main\+Window}} contains methods that creates main window of application and sets it properties. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_a9d08a694a5f9c532225754381b8011ea}\label{class_main_window_a9d08a694a5f9c532225754381b8011ea}} 
+\index{MainWindow@{MainWindow}!timerEvent@{timerEvent}}
+\index{timerEvent@{timerEvent}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{timerEvent()}{timerEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::timer\+Event (\begin{DoxyParamCaption}\item[{QTimer\+Event $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This method connects timers/alarms to the time and sets Icon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$e} & timer event. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/mainwindow.\+h\item 
+C\+:/\+Users/\+Sasha/\+Documents/\+Git\+Hub/\+Sem2\+\_\+\+OOP\+\_\+\+LAB1/\+Refactored\+\_\+\+Project/\+Timer\+Application/\+Timer/mainwindow.\+cpp\end{DoxyCompactItemize}

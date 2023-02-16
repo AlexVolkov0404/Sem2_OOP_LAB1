@@ -1,0 +1,31 @@
+\hypertarget{timerdelete_8h_source}{}\doxysection{timerdelete.\+h}
+\label{timerdelete_8h_source}\index{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/timerdelete.h@{C:/Users/Sasha/Documents/GitHub/Sem2\_OOP\_LAB1/Refactored\_Project/TimerApplication/Timer/timerdelete.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TIMERDELETE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TIMERDELETE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}qlistwidget.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}qmessagebox.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}qtextedit.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}timer.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_timer_delete}{TimerDelete}}:\textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ QListWidget\ *\mbox{\hyperlink{class_timer_delete_a8c47f8626906075c4eb6bcdfec53be9a}{listW}};}
+\DoxyCodeLine{00017\ \ \ \ \ QList<Timer>\ *\mbox{\hyperlink{class_timer_delete_a93293a8f6734734898c14440a2798236}{timers}};}
+\DoxyCodeLine{00019\ \ \ \ \ QMessageBox\ \mbox{\hyperlink{class_timer_delete_ae6daf08e7b7894cb08c74866f8719c44}{message}};}
+\DoxyCodeLine{00020\ \ \ \ \ QLabel\ *mainTimerLbl;}
+\DoxyCodeLine{00021\ \ \ \ \ QTextEdit\ *mainTimerDescriptionLbl;}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_timer_delete}{TimerDelete}}();}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_timer_delete_a65ba2904f4be4021c105cd284205d4db}{delChosenTimer}}(QList<Timer>\ *\mbox{\hyperlink{class_timer_delete_a93293a8f6734734898c14440a2798236}{timers}},\ QListWidget\ *\mbox{\hyperlink{class_timer_delete_a8c47f8626906075c4eb6bcdfec53be9a}{listW}},\ QLabel\ *mainTimerLbl,\ QTextEdit\ *mainTimerDescriptionLbl);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_timer_delete_a7beef1b75e29c1753dbf1a4d251014c1}{delAllTimers}}(QList<Timer>\ *\mbox{\hyperlink{class_timer_delete_a93293a8f6734734898c14440a2798236}{timers}},\ QListWidget\ *\mbox{\hyperlink{class_timer_delete_a8c47f8626906075c4eb6bcdfec53be9a}{listW}},\ QLabel\ *mainTimerLbl,\ QTextEdit\ *mainTimerDescriptionLbl);}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TIMERDELETE\_H}}
+
+\end{DoxyCode}
