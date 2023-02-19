@@ -16,7 +16,7 @@ Refactored_Project - new refactored version of Old_Project. Consists of 5 subpro
 
 1e - UML як мова опису не лише для програмування(Describe WW2 with UML Diagram)
 
-The glossary located in the main folder. This is pdf document describes all terms that used in the diagrams.
+The glossary located in the main folder. This pdf document describes all terms that used in the diagrams.
 
 docks - documentation of my project which was made with Doxygen.
 
