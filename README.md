@@ -1,9 +1,10 @@
 # Sem2_OOP_LAB1
 ## [Documentation](https://alexvolkov0404.github.io/Sem2_OOP_LAB1)
 ## About the project
-Old_Project- OOP LabWork2 2022;
 
-Refactored_Project-new refactored version of Old_Project. Consists of 5 subprojects:Timer(testdisk)-main subproject and 4 UnitTest subprojects: TestTimer, TestAlarm, TestDel, TestSort;
+Old_Project - OOP LabWork2 2022;
+
+Refactored_Project - new refactored version of Old_Project. Consists of 5 subprojects:Timer(testdisk)-main subproject and 4 UnitTest subprojects: TestTimer, TestAlarm, TestDel, TestSort;
 
 1a - Design/Implementation Modeling: 1a_Project_Diagrams-project in which was created UML diagram(If you want open it you should install SoftWare Ideas Modeler), 1a_Diagrams_png-png versions of all diagrams that was draw in  SoftWare Ideas Modeler;
 
@@ -14,3 +15,8 @@ Refactored_Project-new refactored version of Old_Project. Consists of 5 subproje
 1d - Враження від інструменту моделювання чи малювання діаграм(Instrument - SoftWare Ideas Modeler)
 
 1e - UML як мова опису не лише для програмування(Describe WW2 with UML Diagram)
+
+The glossary located in the main folder. This is pdf document describes all terms that used in the diagrams.
+
+docks - documentation of my project which was made with Doxygen.
+
